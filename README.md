@@ -1,4 +1,5 @@
-[TOC]
+我尝试创建的模板hugo静态github pages：
+https://crack-dawn.github.io/CTGU-Hugo-Blog.io/
 
 ## 1.如何快速创建hugo博客仓库/个人笔记
 > 请看： [hugo quick start](https://gohugo.io/getting-started/quick-start/)
@@ -45,10 +46,10 @@ hugo server -D
 ```
 git add .
 git commit -m "first commit"
-git add remote origin https://github.com/你的仓库地址.git 
+git add remote origin https://github.com/你的仓库地址.
 git push -u origin master
 ```
 
 ## 3.部署到github pages
 1. 添加github pages
-![QQ图片](noteImage/mk-2024-07-12-13-06-06-markdown.png)
+![QQ图片](assets_README\QQ_1720760704531.png)
