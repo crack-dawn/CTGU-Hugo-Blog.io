@@ -25,7 +25,7 @@ hugo server
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
-theme = 'ananke'
+theme = 'FixIt'
 ```
 
 3. 添加自己的markdown笔记
@@ -39,5 +39,13 @@ Start Hugo’s development server to see your changes, remembering to include dr
 4. 好了，接下来我们测试下hugo的博客网站
 ```
 hugo server -D
+```
+
+5. 测试完成后，我们使用git提交到github上
+```
+git add .
+git commit -m "first commit"
+git add remote origin https://github.com/你的仓库地址.git 
+git push -u origin master
 ```
 

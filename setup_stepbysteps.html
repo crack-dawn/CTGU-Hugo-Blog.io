@@ -2971,7 +2971,7 @@ hugo server
 <pre><code>baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
-theme = 'ananke'
+theme = 'FixIt'
 </code></pre>
 <ol start="3">
 <li>添加自己的markdown笔记
@@ -2984,6 +2984,14 @@ theme = 'ananke'
 <li>好了，接下来我们测试下hugo的博客网站</li>
 </ol>
 <pre><code>hugo server -D
+</code></pre>
+<ol start="5">
+<li>测试完成后，我们使用git提交到github上</li>
+</ol>
+<pre><code>git add .
+git commit -m &quot;first commit&quot;
+git add remote origin https://github.com/你的仓库地址.git 
+git push -u origin master
 </code></pre>
 </div>
         </div>
