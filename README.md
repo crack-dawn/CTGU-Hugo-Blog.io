@@ -49,3 +49,6 @@ git add remote origin https://github.com/你的仓库地址.git
 git push -u origin master
 ```
 
+## 3.部署到github pages
+1. 添加github pages
+![QQ图片](noteImage/mk-2024-07-12-13-06-06-markdown.png)
