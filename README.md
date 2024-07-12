@@ -51,5 +51,5 @@ git push -u origin master
 ```
 
 ## 3.部署到github pages
-1. 添加github pages
-![QQ图片](assets_README\QQ_1720760704531.png)
+1. 添加gi
+![QQ图片](./assets_README/QQ_1720760704531.png)
