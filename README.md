@@ -1,5 +1,11 @@
+![last commit](https://img.shields.io/github/last-commit/shuosc/fly)
+![size](https://img.shields.io/github/repo-size/shuosc/fly)
+
 我尝试创建的模板hugo静态github pages：
 https://crack-dawn.github.io/CTGU-Hugo-Blog.io/
+
+![last commit](https://img.shields.io/github/last-commit/shuosc/fly)
+![size](https://img.shields.io/github/repo-size/shuosc/fly)
 
 ## 1.如何快速创建hugo博客仓库/个人笔记
 > 请看： [hugo quick start](https://gohugo.io/getting-started/quick-start/)
@@ -53,3 +59,17 @@ git push -u origin master
 ## 3.部署到github pages
 1. 添加gi
 ![QQ图片](./assets_README/QQ_1720760704531.png)
+
+
+---
+###  题外话
+1. gitmodules 分布式构建项目，第一次接触
+
+2. 尝试使用hugo快速搭建个人博客
+3. 借鉴 [SHUFly溯源手册
+](https://github.com/shuosc/fly?tab=readme-ov-file)
+4. 慢慢了解hugo的功能框架，本身也是接触硬件多，网站运维知识并不了解；但是hugo的博客搭建，我感觉挺轻快有趣的。
+5. 还没摸清楚 `github action` 和 `github pages`以及`workflow`的使用技巧。 
+
+hugo mod init github.com/crack-dawn/CTGU-Student-Hugo-Blog
+git@github.com:crack-dawn/CTGU-Student-Hugo-Blog.git

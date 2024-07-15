@@ -2,10 +2,19 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   ><url>
-      <loc>http://localhost:1313/</loc><lastmod>2024-07-11T22:10:50&#43;08:00</lastmod></url><url>
-      <loc>http://localhost:1313/categories/</loc><lastmod>2024-07-11T22:10:50&#43;08:00</lastmod></url><url>
-      <loc>http://localhost:1313/tags/draft/</loc><lastmod>2024-07-11T22:10:50&#43;08:00</lastmod></url><url>
-      <loc>http://localhost:1313/categories/draft/</loc><lastmod>2024-07-11T22:10:50&#43;08:00</lastmod></url><url>
-      <loc>http://localhost:1313/posts/583bc6c/</loc><lastmod>2024-07-11T22:10:50&#43;08:00</lastmod></url><url>
-      <loc>http://localhost:1313/posts/</loc><lastmod>2024-07-11T22:10:50&#43;08:00</lastmod></url><url>
-      <loc>http://localhost:1313/tags/</loc><lastmod>2024-07-11T22:10:50&#43;08:00</lastmod></url></urlset>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/</loc><lastmod>2024-07-11T22:10:50&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/categories/</loc><lastmod>2024-07-11T22:10:50&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/tags/fixit/</loc><lastmod>2024-07-11T22:10:50&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/categories/man/</loc><lastmod>2024-07-11T22:10:50&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/</loc><lastmod>2024-07-11T22:10:50&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/tags/</loc><lastmod>2024-07-11T22:10:50&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/tags/%E5%B0%9D%E8%AF%95/</loc><lastmod>2024-07-11T22:10:50&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/tags/%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91/</loc><lastmod>2024-07-11T22:10:50&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/%E5%B0%9D%E8%AF%95-fixit-shortcode/</loc><lastmod>2024-07-11T22:10:50&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/tags/content/</loc><lastmod>2023-02-24T22:52:50&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/categories/documentation/</loc><lastmod>2023-02-24T22:52:50&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/tags/shortcodes/</loc><lastmod>2023-02-24T22:52:50&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/%E6%89%A9%E5%B1%95-shortcode---bilibili/</loc><lastmod>2023-02-24T22:52:50&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/tags/basics/</loc><lastmod>2023-02-24T22:11:22&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/%E5%86%85%E7%BD%AE-shortcode/</loc><lastmod>2023-02-24T22:11:22&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/%E5%BD%92%E6%A1%A3%E6%96%87%E4%BB%B6--/</loc></url></urlset>

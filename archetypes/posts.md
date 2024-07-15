@@ -1,9 +1,9 @@
 ---
-title: My First Post 
+title: {{ replace .TranslationBaseName "-" " " | title }}
 subtitle:
-date: 2024-07-11T22:10:50+08:00
-slug: 583bc6c
-draft: false
+date: {{ .Date }}
+slug: {{ substr .File.UniqueID 0 7 }}
+draft: true
 author:
   name:
   link:
@@ -15,10 +15,9 @@ license:
 comment: false
 weight: 0
 tags:
-  - draft 
-  - 梗指南
+  - draft
 categories:
-  - man!
+  - draft
 hiddenFromHomePage: false
 hiddenFromSearch: false
 hiddenFromRss: false
@@ -42,8 +41,3 @@ repost:
 ---
 
 <!--more-->
-
-# [man！ what can i say？](https://www.bilibili.com/video/BV16y421v7hE/?vd_source=19fcd28ae8f08ff7bc28df026889a333)
-
-
-# [曼波!](https://www.bilibili.com/video/BV1Bt42137XA/?spm_id_from=pageDriver&vd_source=19fcd28ae8f08ff7bc28df026889a333)
