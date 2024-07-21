@@ -74,6 +74,14 @@
     
 # 更改文章页面配置
 [page]
+# 代码配置
+    [page.code]  
+        # 是否显示代码块的复制按钮
+        copy = true
+        # FixIt 0.2.13 | 新增 是否显示代码块的编辑按钮
+        edit = true
+        # 默认展开显示的代码行数
+        maxShownLines = 15
      # FixIt 0.2.15 | 新增 转载配置
     [page.repost]
       enable = false
