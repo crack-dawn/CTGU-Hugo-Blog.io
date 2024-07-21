@@ -1,11 +1,9 @@
-![last commit](https://img.shields.io/github/last-commit/shuosc/fly)
-![size](https://img.shields.io/github/repo-size/shuosc/fly)
+![last commit](https://img.shields.io/github/last-commit/crack-dawn/CTGU-Hugo-Blog.io)
+![size](https://img.shields.io/github/repo-size/crack-dawn/CTGU-Hugo-Blog.io)
 
 我尝试创建的模板hugo静态github pages：
 https://crack-dawn.github.io/CTGU-Hugo-Blog.io/
-
-![last commit](https://img.shields.io/github/last-commit/shuosc/fly)
-![size](https://img.shields.io/github/repo-size/shuosc/fly)
+ 
 
 ## 1.如何快速创建hugo博客仓库/个人笔记
 > 请看： [hugo quick start](https://gohugo.io/getting-started/quick-start/)
