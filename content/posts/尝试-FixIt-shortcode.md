@@ -6,9 +6,8 @@ draft: false
 comment: true
 weight: 0
 archives: [2024-07-11]
-tags:  ["尝试","FixIt","插入视频"]
-categories:
-  - man!
+# tags:  ["hugo笔记"]
+categories: ["hugo学习"]
 summary:
 resources:
   - name: featured-image

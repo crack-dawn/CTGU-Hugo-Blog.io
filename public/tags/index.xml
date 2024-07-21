@@ -3,53 +3,5 @@
     <title>Tags - Tag - A CTGUer&#39;s New Hugo Site</title>
     <link>http://localhost:1313/CTGU-Hugo-Blog.io/tags/</link>
     <description>Tags - Tag | A CTGUer&#39;s New Hugo Site</description>
-    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 11 Jul 2024 22:10:50 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/CTGU-Hugo-Blog.io/tags/" rel="self" type="application/rss+xml" /><item>
-  <title>FixIt</title>
-  <link>http://localhost:1313/CTGU-Hugo-Blog.io/tags/fixit/</link>
-  <pubDate>Thu, 11 Jul 2024 22:10:50 &#43;0800</pubDate>
-  <author>Author</author>
-  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/tags/fixit/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>尝试</title>
-  <link>http://localhost:1313/CTGU-Hugo-Blog.io/tags/%E5%B0%9D%E8%AF%95/</link>
-  <pubDate>Thu, 11 Jul 2024 22:10:50 &#43;0800</pubDate>
-  <author>Author</author>
-  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/tags/%E5%B0%9D%E8%AF%95/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>插入视频</title>
-  <link>http://localhost:1313/CTGU-Hugo-Blog.io/tags/%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91/</link>
-  <pubDate>Thu, 11 Jul 2024 22:10:50 &#43;0800</pubDate>
-  <author>Author</author>
-  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/tags/%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>Content</title>
-  <link>http://localhost:1313/CTGU-Hugo-Blog.io/tags/content/</link>
-  <pubDate>Fri, 24 Feb 2023 22:52:50 &#43;0800</pubDate>
-  <author>Author</author>
-  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/tags/content/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>Shortcodes</title>
-  <link>http://localhost:1313/CTGU-Hugo-Blog.io/tags/shortcodes/</link>
-  <pubDate>Fri, 24 Feb 2023 22:52:50 &#43;0800</pubDate>
-  <author>Author</author>
-  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/tags/shortcodes/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>Basics</title>
-  <link>http://localhost:1313/CTGU-Hugo-Blog.io/tags/basics/</link>
-  <pubDate>Fri, 24 Feb 2023 22:11:22 &#43;0800</pubDate>
-  <author>Author</author>
-  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/tags/basics/</guid>
-  <description><![CDATA[]]></description>
-</item>
-</channel>
+    <generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="http://localhost:1313/CTGU-Hugo-Blog.io/tags/" rel="self" type="application/rss+xml" /></channel>
 </rss>

@@ -5,10 +5,10 @@
     <description>Basics - Tag | A CTGUer&#39;s New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 24 Feb 2023 22:11:22 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/CTGU-Hugo-Blog.io/tags/basics/" rel="self" type="application/rss+xml" /><item>
   <title>内置 Shortcodes</title>
-  <link>http://localhost:1313/CTGU-Hugo-Blog.io/posts/%E5%86%85%E7%BD%AE-shortcode/</link>
+  <link>http://localhost:1313/CTGU-Hugo-Blog.io/hugo-learn/%E5%86%85%E7%BD%AE-shortcode/</link>
   <pubDate>Fri, 24 Feb 2023 22:11:22 &#43;0800</pubDate>
   <author>Author</author>
-  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/posts/%E5%86%85%E7%BD%AE-shortcode/</guid>
+  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/hugo-learn/%E5%86%85%E7%BD%AE-shortcode/</guid>
   <description><![CDATA[<p><strong>Hugo</strong> 提供了多个内置的 Shortcodes, 以方便作者保持 Markdown 内容的整洁。</p>]]></description>
 </item>
 </channel>

@@ -11,29 +11,5 @@
   <guid>http://localhost:1313/CTGU-Hugo-Blog.io/posts/%E5%B0%9D%E8%AF%95-fixit-shortcode/</guid>
   <description><![CDATA[]]></description>
 </item>
-<item>
-  <title>扩展 Shortcode - bilibili</title>
-  <link>http://localhost:1313/CTGU-Hugo-Blog.io/posts/%E6%89%A9%E5%B1%95-shortcode---bilibili/</link>
-  <pubDate>Fri, 24 Feb 2023 22:52:50 &#43;0800</pubDate>
-  <author>Author</author>
-  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/posts/%E6%89%A9%E5%B1%95-shortcode---bilibili/</guid>
-  <description><![CDATA[<p><code>bilibili</code> shortcode 提供了一个内嵌的用来播放 bilibili 视频的响应式播放器。</p>]]></description>
-</item>
-<item>
-  <title>内置 Shortcodes</title>
-  <link>http://localhost:1313/CTGU-Hugo-Blog.io/posts/%E5%86%85%E7%BD%AE-shortcode/</link>
-  <pubDate>Fri, 24 Feb 2023 22:11:22 &#43;0800</pubDate>
-  <author>Author</author>
-  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/posts/%E5%86%85%E7%BD%AE-shortcode/</guid>
-  <description><![CDATA[<p><strong>Hugo</strong> 提供了多个内置的 Shortcodes, 以方便作者保持 Markdown 内容的整洁。</p>]]></description>
-</item>
-<item>
-  <title>归档文件--</title>
-  <link>http://localhost:1313/CTGU-Hugo-Blog.io/posts/%E5%BD%92%E6%A1%A3%E6%96%87%E4%BB%B6--/</link>
-  <pubDate>Mon, 01 Jan 0001 00:00:00 &#43;0000</pubDate>
-  <author>Author</author>
-  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/posts/%E5%BD%92%E6%A1%A3%E6%96%87%E4%BB%B6--/</guid>
-  <description><![CDATA[This page contains an archive of all posts.]]></description>
-</item>
 </channel>
 </rss>

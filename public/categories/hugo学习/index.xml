@@ -1,0 +1,930 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Hugo学习 - Category - A CTGUer&#39;s New Hugo Site</title>
+    <link>http://localhost:1313/CTGU-Hugo-Blog.io/categories/hugo%E5%AD%A6%E4%B9%A0/</link>
+    <description>Hugo学习 - Category | A CTGUer&#39;s New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 15 Jul 2024 23:06:23 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/CTGU-Hugo-Blog.io/categories/hugo%E5%AD%A6%E4%B9%A0/" rel="self" type="application/rss+xml" /><item>
+  <title>Hugo建立项目 快速开始</title>
+  <link>http://localhost:1313/CTGU-Hugo-Blog.io/hugo-learn/7f5c7db/</link>
+  <pubDate>Mon, 15 Jul 2024 23:06:23 &#43;0800</pubDate>
+  <author>Author</author>
+  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/hugo-learn/7f5c7db/</guid>
+  <description><![CDATA[<p>快速建立一个 hugo项目，请参考
+<a href="https://gohugo.io/getting-started/quick-start/"target="_blank" rel="external nofollow noopener noreferrer">go Hugo quick start</a>：https://gohugo.io/getting-started/quick-start/</p>]]></description>
+</item>
+<item>
+  <title>hugo-embed-pdf插件</title>
+  <link>http://localhost:1313/CTGU-Hugo-Blog.io/hugo-learn/82764a2/</link>
+  <pubDate>Mon, 15 Jul 2024 22:36:25 &#43;0800</pubDate>
+  <author>Author</author>
+  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/hugo-learn/82764a2/</guid>
+  <description><![CDATA[<p>hugo插入PDF的Shortcode
+<a href="https://github.com/anvithks/hugo-embed-pdf-shortcode"target="_blank" rel="external nofollow noopener noreferrer">hugo-embed-pdf-Shortcode</a>：https://github.com/anvithks/hugo-embed-pdf-shortcode
+<a href="https://hugo-embed-pdf.netlify.app/demo/"target="_blank" rel="external nofollow noopener noreferrer">示例demo：https://hugo-embed-pdf.netlify.app/demo/</a>:https://hugo-embed-pdf.netlify.app/demo/</p>
+<hr>
+<p><a href="https://badges.mit-license.org"target="_blank" rel="external nofollow noopener noreferrer"><img loading="lazy" src="https://img.shields.io/:license-mit-blue.svg?style=flat-square" alt="License" srcset="https://img.shields.io/:license-mit-blue.svg?style=flat-square&amp;size=small, https://img.shields.io/:license-mit-blue.svg?style=flat-square&amp;size=medium 1.5x, https://img.shields.io/:license-mit-blue.svg?style=flat-square&amp;size=large 2x" data-title="License" class="suffix-invalid suffix-invalid__small suffix-invalid__large" style="background: url(/CTGU-Hugo-Blog.io/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></a> <img loading="lazy" src="https://visitor-badge.glitch.me/badge?page_id=anvithks.hugo-embed-pdf-shortcode" alt="visitors" srcset="https://visitor-badge.glitch.me/badge?page_id=anvithks.hugo-embed-pdf-shortcode&amp;size=small, https://visitor-badge.glitch.me/badge?page_id=anvithks.hugo-embed-pdf-shortcode&amp;size=medium 1.5x, https://visitor-badge.glitch.me/badge?page_id=anvithks.hugo-embed-pdf-shortcode&amp;size=large 2x" data-title="visitors" class="suffix-invalid suffix-invalid__small suffix-invalid__large" style="background: url(/CTGU-Hugo-Blog.io/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h1 id="hugo-embed-pdf-shortcode" class="heading-element"><span>hugo-embed-pdf-shortcode</span>
+  <a href="#hugo-embed-pdf-shortcode" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h1><hr>
+<h1 id="table-of-contents" class="heading-element"><span>Table of Contents</span>
+  <a href="#table-of-contents" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h1><ul>
+<li><a href="https://hugo-embed-pdf.netlify.app/"target="_blank" rel="external nofollow noopener noreferrer">Online Demo</a></li>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#setup">Setup</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#support">Support</a></li>
+<li><a href="#who-uses-hugo-embed-pdf-shortcode">Who uses embed-pdf</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<hr>
+<h2 id="introduction" class="heading-element"><span>Introduction</span>
+  <a href="#introduction" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p><a href="#table-of-contents">[Back to Top]</a></p>
+<p>This is a <a href="https://gohugo.io/extras/shortcodes/"target="_blank" rel="external nofollow noopener noreferrer">Hugo Shortcode</a> developed for use in <a href="https://gohugo.io/"target="_blank" rel="external nofollow noopener noreferrer">Hugo</a> based websites. This shortcode allows you to embed a PDF file in a page on your Hugo website. It is developed using the <a href="https://mozilla.github.io/pdf.js/"target="_blank" rel="external nofollow noopener noreferrer">PDF.js</a> library by Mozilla.</p>
+<p><img loading="lazy" src="hugo-embed-pdf-cover.png" alt="hugo-embed-pdf-shortcode cover" srcset="hugo-embed-pdf-cover.png?size=small, hugo-embed-pdf-cover.png?size=medium 1.5x, hugo-embed-pdf-cover.png?size=large 2x" data-title="hugo-embed-pdf-shortcode cover" style="background: url(/CTGU-Hugo-Blog.io/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<h2 id="setup" class="heading-element"><span>Setup</span>
+  <a href="#setup" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p><a href="#table-of-contents">[Back to Top]</a></p>
+<p><strong>Note:</strong>  This shortcode is for use in Hugo based websites. It will not work anywhere else.</p>
+<p>Hugo embed-pdf can be installed in two ways.</p>
+<h3 id="method-1---install-as-a-git-submodule" class="heading-element"><span>Method 1 - Install as a Git submodule</span>
+  <a href="#method-1---install-as-a-git-submodule" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ol>
+<li>Add this shortcode as a Git submodule</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git submodule add  https://github.com/anvithks/hugo-embed-pdf-shortcode.git themes/hugo-embed-pdf-shortcode</span></span></code></pre></div><ol start="2">
+<li>Edit <code>config.toml</code> as follows</li>
+</ol>
+<pre tabindex="0"><code>theme = [&#34;hugo-embed-pdf-shortcode&#34;, &#34;YourCurrentTheme&#34;]
+enableInlineShortcodes = true</code></pre><p><strong>To learn more about &ldquo;Theme components&rdquo;, see <a href="https://gohugo.io/hugo-modules/theme-components/"target="_blank" rel="external nofollow noopener noreferrer">the Hugo documentation</a></strong></p>
+<!-- raw HTML omitted -->
+<h3 id="method-2---clone-this-repository" class="heading-element"><span>Method 2 - Clone this repository</span>
+  <a href="#method-2---clone-this-repository" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ol>
+<li>Clone this repository
+<!-- raw HTML omitted --></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone https://github.com/anvithks/hugo-embed-pdf-shortcode.git
+</span></span><span style="display:flex;"><span>cd hugo-embed-pdf-shortcode</span></span></code></pre></div><ol start="2">
+<li>Copy the file <code>./layouts/shortcodes/embed-pdf.html</code> to  <code>./layouts/shortcodes</code> in your Hugo website directory.<br>
+<!-- raw HTML omitted --></li>
+</ol>
+<p><strong>Note:</strong> If you do not have a <code>./layouts/shortcodes</code> directory you can create it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cp ./layouts/shortcodes/embed-pdf.html /path/to/your/hugo/website/layouts/shortcodes</span></span></code></pre></div><!-- raw HTML omitted -->
+<ol start="3">
+<li>Copy the pdf.js library files from <code>./static/js/pdf-js</code> to <code>./static/js</code> in your Hugo website directory.<br>
+<!-- raw HTML omitted --></li>
+</ol>
+<p><strong>Note:</strong> If you do not have a <code>./static/js</code> directory you can create it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>cp -R ./static/js/pdf-js /path/to/your/hugo/website/static/js/</span></span></code></pre></div><!-- raw HTML omitted -->
+<h2 id="usage" class="heading-element"><span>Usage</span>
+  <a href="#usage" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p><a href="#table-of-contents">[Back to Top]</a></p>
+<p><img loading="lazy" src="/public/images/%e9%80%82%e9%be%84%e6%8f%90%e7%a4%ba.png" alt=" 插一张图 " srcset="/public/images/%e9%80%82%e9%be%84%e6%8f%90%e7%a4%ba.png?size=small, /public/images/%e9%80%82%e9%be%84%e6%8f%90%e7%a4%ba.png?size=medium 1.5x, /public/images/%e9%80%82%e9%be%84%e6%8f%90%e7%a4%ba.png?size=large 2x" data-title=" 插一张图 " style="background: url(/CTGU-Hugo-Blog.io/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></p>
+<p>In your Hugo website place the following shortcode in any of the markdown pages.</p>
+<pre tabindex="0"><code><script type="text/javascript" src= '/js/pdf-js/build/pdf.js'></script>
+
+<style>
+  #embed-pdf-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 20vh;
+     
+  }
+  
+  .pdf-canvas {
+    border: 1px solid black;
+    direction: ltr;
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  #the-canvas {
+    border: 1px solid black;
+    direction: ltr;
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  
+  
+  .pdf-loadingWrapper {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+  }
+  
+  .pdf-loading {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #d2d0d0;;
+    border-radius: 50%;
+    border-top-color: #383838;
+    animation: spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+  }
+  
+  
+  
+  
+  
+  #overlayText {
+    word-wrap: break-word;
+    display: grid;
+    justify-content: end;
+  }
+  
+  #overlayText a {
+    position: relative;
+    top: 10px;
+    right: 4px;
+    color: #000;
+    margin: auto;
+    background-color: #eeeeee;
+    padding: 0.3em 1em;
+    border: solid 2px;
+    border-radius: 12px;
+    border-color: #00000030;
+    text-decoration: none;
+  }
+  
+  #overlayText svg {
+    height: clamp(1em, 2vw, 1.4em);
+    width:  clamp(1em, 2vw, 1.4em);
+  }
+  
+  
+  
+  @keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  @-webkit-keyframes spin {
+    to { -webkit-transform: rotate(360deg); }
+  }
+  </style><div class="embed-pdf-container" id="embed-pdf-container-4ac7f145">
+    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-4ac7f145">
+        <div class="pdf-loading" id="pdf-loading-4ac7f145"></div>
+    </div>
+    <div id="overlayText">
+      <a href="./static/PDF/SVPWM.pdf" aria-label="Download" download>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+            <path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+        </svg>
+      </a>
+    </div>
+    <canvas class="pdf-canvas" id="pdf-canvas-4ac7f145"></canvas>
+</div>
+
+<div class="pdf-paginator" id="pdf-paginator-4ac7f145">
+    <button id="pdf-prev-4ac7f145">Previous</button>
+    <button id="pdf-next-4ac7f145">Next</button> &nbsp; &nbsp;
+    <span>
+      <span class="pdf-pagenum" id="pdf-pagenum-4ac7f145"></span> / <span class="pdf-pagecount" id="pdf-pagecount-4ac7f145"></span>
+    </span>
+    <a class="pdf-source" id="pdf-source-4ac7f145" href="./static/PDF/SVPWM.pdf">[pdf]</a>
+</div>
+
+<noscript>
+View the PDF file <a class="pdf-source" id="pdf-source-noscript-4ac7f145" href="./static/PDF/SVPWM.pdf">here</a>.
+</noscript>
+
+<script type="text/javascript">
+    (function(){
+    var url = '.\/static\/PDF\/SVPWM.pdf';
+
+    var hidePaginator = "" === "true";
+    var hideLoader = "" === "true";
+    var selectedPageNum = parseInt("") || 1;
+
+    
+    var pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+    
+    if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+      pdfjsLib.GlobalWorkerOptions.workerSrc = "http:\/\/localhost:1313\/CTGU-Hugo-Blog.io\/" + 'js/pdf-js/build/pdf.worker.js';
+
+    
+    var pdfDoc = null,
+        pageNum = selectedPageNum,
+        pageRendering = false,
+        pageNumPending = null,
+        scale = 3,
+        canvas = document.getElementById('pdf-canvas-4ac7f145'),
+        ctx = canvas.getContext('2d'),
+        paginator = document.getElementById("pdf-paginator-4ac7f145"),
+        loadingWrapper = document.getElementById('pdf-loadingWrapper-4ac7f145');
+
+
+    
+    showPaginator();
+    showLoader();
+
+    
+
+    function renderPage(num) {
+      pageRendering = true;
+      
+      pdfDoc.getPage(num).then(function(page) {
+        var viewport = page.getViewport({scale: scale});
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        
+        var renderContext = {
+          canvasContext: ctx,
+          viewport: viewport
+        };
+        var renderTask = page.render(renderContext);
+
+        
+        renderTask.promise.then(function() {
+          pageRendering = false;
+          showContent();
+
+          if (pageNumPending !== null) {
+            
+            renderPage(pageNumPending);
+            pageNumPending = null;
+          }
+        });
+      });
+
+      
+      document.getElementById('pdf-pagenum-4ac7f145').textContent = num;
+    }
+
+    
+
+    function showContent() {
+      loadingWrapper.style.display = 'none';
+      canvas.style.display = 'block';
+    }
+
+    
+
+    function showLoader() {
+      if(hideLoader) return
+      loadingWrapper.style.display = 'flex';
+      canvas.style.display = 'none';
+    }
+
+    
+
+    function showPaginator() {
+      if(hidePaginator) return
+      paginator.style.display = 'block';
+    }
+
+    
+
+    function queueRenderPage(num) {
+      if (pageRendering) {
+        pageNumPending = num;
+      } else {
+        renderPage(num);
+      }
+    }
+
+    
+
+    function onPrevPage() {
+      if (pageNum <= 1) {
+        return;
+      }
+      pageNum--;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-prev-4ac7f145').addEventListener('click', onPrevPage);
+
+    
+
+    function onNextPage() {
+      if (pageNum >= pdfDoc.numPages) {
+        return;
+      }
+      pageNum++;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-next-4ac7f145').addEventListener('click', onNextPage);
+
+    
+
+    pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+      pdfDoc = pdfDoc_;
+      var numPages = pdfDoc.numPages;
+      document.getElementById('pdf-pagecount-4ac7f145').textContent = numPages;
+
+      
+      if(pageNum > numPages) {
+        pageNum = numPages
+      }
+
+      
+      renderPage(pageNum);
+    });
+    })();
+</script>
+</code></pre><p>To hide pagination</p>
+<pre tabindex="0"><code><div class="embed-pdf-container" id="embed-pdf-container-fb83bda4">
+    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-fb83bda4">
+        <div class="pdf-loading" id="pdf-loading-fb83bda4"></div>
+    </div>
+    <div id="overlayText">
+      <a href="./PDF/SVPWM.pdf" aria-label="Download" download>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+            <path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+        </svg>
+      </a>
+    </div>
+    <canvas class="pdf-canvas" id="pdf-canvas-fb83bda4"></canvas>
+</div>
+
+<div class="pdf-paginator" id="pdf-paginator-fb83bda4">
+    <button id="pdf-prev-fb83bda4">Previous</button>
+    <button id="pdf-next-fb83bda4">Next</button> &nbsp; &nbsp;
+    <span>
+      <span class="pdf-pagenum" id="pdf-pagenum-fb83bda4"></span> / <span class="pdf-pagecount" id="pdf-pagecount-fb83bda4"></span>
+    </span>
+    <a class="pdf-source" id="pdf-source-fb83bda4" href="./PDF/SVPWM.pdf">[pdf]</a>
+</div>
+
+<noscript>
+View the PDF file <a class="pdf-source" id="pdf-source-noscript-fb83bda4" href="./PDF/SVPWM.pdf">here</a>.
+</noscript>
+
+<script type="text/javascript">
+    (function(){
+    var url = '.\/PDF\/SVPWM.pdf';
+
+    var hidePaginator = "true" === "true";
+    var hideLoader = "" === "true";
+    var selectedPageNum = parseInt("") || 1;
+
+    
+    var pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+    
+    if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+      pdfjsLib.GlobalWorkerOptions.workerSrc = "http:\/\/localhost:1313\/CTGU-Hugo-Blog.io\/" + 'js/pdf-js/build/pdf.worker.js';
+
+    
+    var pdfDoc = null,
+        pageNum = selectedPageNum,
+        pageRendering = false,
+        pageNumPending = null,
+        scale = 3,
+        canvas = document.getElementById('pdf-canvas-fb83bda4'),
+        ctx = canvas.getContext('2d'),
+        paginator = document.getElementById("pdf-paginator-fb83bda4"),
+        loadingWrapper = document.getElementById('pdf-loadingWrapper-fb83bda4');
+
+
+    
+    showPaginator();
+    showLoader();
+
+    
+
+    function renderPage(num) {
+      pageRendering = true;
+      
+      pdfDoc.getPage(num).then(function(page) {
+        var viewport = page.getViewport({scale: scale});
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        
+        var renderContext = {
+          canvasContext: ctx,
+          viewport: viewport
+        };
+        var renderTask = page.render(renderContext);
+
+        
+        renderTask.promise.then(function() {
+          pageRendering = false;
+          showContent();
+
+          if (pageNumPending !== null) {
+            
+            renderPage(pageNumPending);
+            pageNumPending = null;
+          }
+        });
+      });
+
+      
+      document.getElementById('pdf-pagenum-fb83bda4').textContent = num;
+    }
+
+    
+
+    function showContent() {
+      loadingWrapper.style.display = 'none';
+      canvas.style.display = 'block';
+    }
+
+    
+
+    function showLoader() {
+      if(hideLoader) return
+      loadingWrapper.style.display = 'flex';
+      canvas.style.display = 'none';
+    }
+
+    
+
+    function showPaginator() {
+      if(hidePaginator) return
+      paginator.style.display = 'block';
+    }
+
+    
+
+    function queueRenderPage(num) {
+      if (pageRendering) {
+        pageNumPending = num;
+      } else {
+        renderPage(num);
+      }
+    }
+
+    
+
+    function onPrevPage() {
+      if (pageNum <= 1) {
+        return;
+      }
+      pageNum--;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-prev-fb83bda4').addEventListener('click', onPrevPage);
+
+    
+
+    function onNextPage() {
+      if (pageNum >= pdfDoc.numPages) {
+        return;
+      }
+      pageNum++;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-next-fb83bda4').addEventListener('click', onNextPage);
+
+    
+
+    pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+      pdfDoc = pdfDoc_;
+      var numPages = pdfDoc.numPages;
+      document.getElementById('pdf-pagecount-fb83bda4').textContent = numPages;
+
+      
+      if(pageNum > numPages) {
+        pageNum = numPages
+      }
+
+      
+      renderPage(pageNum);
+    });
+    })();
+</script>
+</code></pre><p>To render a selected page number</p>
+<pre tabindex="0"><code><div class="embed-pdf-container" id="embed-pdf-container-fb83bda4">
+    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-fb83bda4">
+        <div class="pdf-loading" id="pdf-loading-fb83bda4"></div>
+    </div>
+    <div id="overlayText">
+      <a href="./PDF/SVPWM.pdf" aria-label="Download" download>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+            <path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+        </svg>
+      </a>
+    </div>
+    <canvas class="pdf-canvas" id="pdf-canvas-fb83bda4"></canvas>
+</div>
+
+<div class="pdf-paginator" id="pdf-paginator-fb83bda4">
+    <button id="pdf-prev-fb83bda4">Previous</button>
+    <button id="pdf-next-fb83bda4">Next</button> &nbsp; &nbsp;
+    <span>
+      <span class="pdf-pagenum" id="pdf-pagenum-fb83bda4"></span> / <span class="pdf-pagecount" id="pdf-pagecount-fb83bda4"></span>
+    </span>
+    <a class="pdf-source" id="pdf-source-fb83bda4" href="./PDF/SVPWM.pdf">[pdf]</a>
+</div>
+
+<noscript>
+View the PDF file <a class="pdf-source" id="pdf-source-noscript-fb83bda4" href="./PDF/SVPWM.pdf">here</a>.
+</noscript>
+
+<script type="text/javascript">
+    (function(){
+    var url = '.\/PDF\/SVPWM.pdf';
+
+    var hidePaginator = "" === "true";
+    var hideLoader = "" === "true";
+    var selectedPageNum = parseInt("5") || 1;
+
+    
+    var pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+    
+    if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+      pdfjsLib.GlobalWorkerOptions.workerSrc = "http:\/\/localhost:1313\/CTGU-Hugo-Blog.io\/" + 'js/pdf-js/build/pdf.worker.js';
+
+    
+    var pdfDoc = null,
+        pageNum = selectedPageNum,
+        pageRendering = false,
+        pageNumPending = null,
+        scale = 3,
+        canvas = document.getElementById('pdf-canvas-fb83bda4'),
+        ctx = canvas.getContext('2d'),
+        paginator = document.getElementById("pdf-paginator-fb83bda4"),
+        loadingWrapper = document.getElementById('pdf-loadingWrapper-fb83bda4');
+
+
+    
+    showPaginator();
+    showLoader();
+
+    
+
+    function renderPage(num) {
+      pageRendering = true;
+      
+      pdfDoc.getPage(num).then(function(page) {
+        var viewport = page.getViewport({scale: scale});
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        
+        var renderContext = {
+          canvasContext: ctx,
+          viewport: viewport
+        };
+        var renderTask = page.render(renderContext);
+
+        
+        renderTask.promise.then(function() {
+          pageRendering = false;
+          showContent();
+
+          if (pageNumPending !== null) {
+            
+            renderPage(pageNumPending);
+            pageNumPending = null;
+          }
+        });
+      });
+
+      
+      document.getElementById('pdf-pagenum-fb83bda4').textContent = num;
+    }
+
+    
+
+    function showContent() {
+      loadingWrapper.style.display = 'none';
+      canvas.style.display = 'block';
+    }
+
+    
+
+    function showLoader() {
+      if(hideLoader) return
+      loadingWrapper.style.display = 'flex';
+      canvas.style.display = 'none';
+    }
+
+    
+
+    function showPaginator() {
+      if(hidePaginator) return
+      paginator.style.display = 'block';
+    }
+
+    
+
+    function queueRenderPage(num) {
+      if (pageRendering) {
+        pageNumPending = num;
+      } else {
+        renderPage(num);
+      }
+    }
+
+    
+
+    function onPrevPage() {
+      if (pageNum <= 1) {
+        return;
+      }
+      pageNum--;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-prev-fb83bda4').addEventListener('click', onPrevPage);
+
+    
+
+    function onNextPage() {
+      if (pageNum >= pdfDoc.numPages) {
+        return;
+      }
+      pageNum++;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-next-fb83bda4').addEventListener('click', onNextPage);
+
+    
+
+    pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+      pdfDoc = pdfDoc_;
+      var numPages = pdfDoc.numPages;
+      document.getElementById('pdf-pagecount-fb83bda4').textContent = numPages;
+
+      
+      if(pageNum > numPages) {
+        pageNum = numPages
+      }
+
+      
+      renderPage(pageNum);
+    });
+    })();
+</script>
+</code></pre><p>To hide loading spinner</p>
+<pre tabindex="0"><code><div class="embed-pdf-container" id="embed-pdf-container-fb83bda4">
+    <div class="pdf-loadingWrapper" id="pdf-loadingWrapper-fb83bda4">
+        <div class="pdf-loading" id="pdf-loading-fb83bda4"></div>
+    </div>
+    <div id="overlayText">
+      <a href="./PDF/SVPWM.pdf" aria-label="Download" download>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+            <path d="M9 13c.3 0 .5-.1.7-.3L15.4 7 14 5.6l-4 4V1H8v8.6l-4-4L2.6 7l5.7 5.7c.2.2.4.3.7.3zm-7 2h14v2H2z" />
+        </svg>
+      </a>
+    </div>
+    <canvas class="pdf-canvas" id="pdf-canvas-fb83bda4"></canvas>
+</div>
+
+<div class="pdf-paginator" id="pdf-paginator-fb83bda4">
+    <button id="pdf-prev-fb83bda4">Previous</button>
+    <button id="pdf-next-fb83bda4">Next</button> &nbsp; &nbsp;
+    <span>
+      <span class="pdf-pagenum" id="pdf-pagenum-fb83bda4"></span> / <span class="pdf-pagecount" id="pdf-pagecount-fb83bda4"></span>
+    </span>
+    <a class="pdf-source" id="pdf-source-fb83bda4" href="./PDF/SVPWM.pdf">[pdf]</a>
+</div>
+
+<noscript>
+View the PDF file <a class="pdf-source" id="pdf-source-noscript-fb83bda4" href="./PDF/SVPWM.pdf">here</a>.
+</noscript>
+
+<script type="text/javascript">
+    (function(){
+    var url = '.\/PDF\/SVPWM.pdf';
+
+    var hidePaginator = "" === "true";
+    var hideLoader = "true" === "true";
+    var selectedPageNum = parseInt("") || 1;
+
+    
+    var pdfjsLib = window['pdfjs-dist/build/pdf'];
+
+    
+    if (pdfjsLib.GlobalWorkerOptions.workerSrc == '')
+      pdfjsLib.GlobalWorkerOptions.workerSrc = "http:\/\/localhost:1313\/CTGU-Hugo-Blog.io\/" + 'js/pdf-js/build/pdf.worker.js';
+
+    
+    var pdfDoc = null,
+        pageNum = selectedPageNum,
+        pageRendering = false,
+        pageNumPending = null,
+        scale = 3,
+        canvas = document.getElementById('pdf-canvas-fb83bda4'),
+        ctx = canvas.getContext('2d'),
+        paginator = document.getElementById("pdf-paginator-fb83bda4"),
+        loadingWrapper = document.getElementById('pdf-loadingWrapper-fb83bda4');
+
+
+    
+    showPaginator();
+    showLoader();
+
+    
+
+    function renderPage(num) {
+      pageRendering = true;
+      
+      pdfDoc.getPage(num).then(function(page) {
+        var viewport = page.getViewport({scale: scale});
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        
+        var renderContext = {
+          canvasContext: ctx,
+          viewport: viewport
+        };
+        var renderTask = page.render(renderContext);
+
+        
+        renderTask.promise.then(function() {
+          pageRendering = false;
+          showContent();
+
+          if (pageNumPending !== null) {
+            
+            renderPage(pageNumPending);
+            pageNumPending = null;
+          }
+        });
+      });
+
+      
+      document.getElementById('pdf-pagenum-fb83bda4').textContent = num;
+    }
+
+    
+
+    function showContent() {
+      loadingWrapper.style.display = 'none';
+      canvas.style.display = 'block';
+    }
+
+    
+
+    function showLoader() {
+      if(hideLoader) return
+      loadingWrapper.style.display = 'flex';
+      canvas.style.display = 'none';
+    }
+
+    
+
+    function showPaginator() {
+      if(hidePaginator) return
+      paginator.style.display = 'block';
+    }
+
+    
+
+    function queueRenderPage(num) {
+      if (pageRendering) {
+        pageNumPending = num;
+      } else {
+        renderPage(num);
+      }
+    }
+
+    
+
+    function onPrevPage() {
+      if (pageNum <= 1) {
+        return;
+      }
+      pageNum--;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-prev-fb83bda4').addEventListener('click', onPrevPage);
+
+    
+
+    function onNextPage() {
+      if (pageNum >= pdfDoc.numPages) {
+        return;
+      }
+      pageNum++;
+      queueRenderPage(pageNum);
+    }
+    document.getElementById('pdf-next-fb83bda4').addEventListener('click', onNextPage);
+
+    
+
+    pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+      pdfDoc = pdfDoc_;
+      var numPages = pdfDoc.numPages;
+      document.getElementById('pdf-pagecount-fb83bda4').textContent = numPages;
+
+      
+      if(pageNum > numPages) {
+        pageNum = numPages
+      }
+
+      
+      renderPage(pageNum);
+    });
+    })();
+</script>
+</code></pre><h3 id="parameters" class="heading-element"><span>Parameters</span>
+  <a href="#parameters" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><ul>
+<li>
+<p><strong>url (required)</strong> : The relative location of the file.</p>
+</li>
+<li>
+<p><strong>hidePaginator (optional)</strong>: Boolean which expects <code>true</code> or <code>false</code>. Hides the paginator for single page documents.</p>
+</li>
+<li>
+<p><strong>renderPageNum (optional)</strong>: Integer which expects any number from <code>1</code> up to the last page number in the document. Will render that specific page on initial load.</p>
+</li>
+<li>
+<p><strong>hideLoader (optional)</strong>: Boolean which expects <code>true</code> or <code>false</code>. Hides the loading spinner while your document loads.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<p><strong>Note:</strong> Currently supports local file embed. If absolute URL from the remote server is provided, configure the CORS header on that server.</p>
+<h2 id="faq" class="heading-element"><span>FAQ</span>
+  <a href="#faq" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p><a href="#table-of-contents">[Back to Top]</a></p>
+<ol>
+<li>I have installed hugo-embed-pdf in my website locally by cloning the repository and copying the files, but it does not work?<br>
+A. hugo-embed-pdf uses pdf.js from mozilla. Pdf.js is now being served using a CDN.<br>
+If you would like to use a local copy of PDf.js then you can make the following changes to the <code>embed-pdf.html</code> file.</li>
+</ol>
+<ul>
+<li>Change the script tag at the top of the file from</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://cdn.jsdelivr.net/npm/pdfjs-dist@3.4.120/build/pdf.min.js&#34;</span> <span style="color:#a6e22e">integrity</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sha256-UZQVSEoMbJ82/3uFjt4mYOTVVHIImtkp7u3L6LMH6/Y=&#34;</span> <span style="color:#a6e22e">crossorigin</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;anonymous&#34;</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/script&gt;</span></span></span></code></pre></div><p><strong>to</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;{{&#34;/js/pdf-js/build/pdf.js&#34; | relURL}}&#39;</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/script&gt;</span></span></span></code></pre></div><ul>
+<li>Change the path to the <code>pdf.worker.js</code> file at line number 124 from</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">pdfjsLib</span>.<span style="color:#a6e22e">GlobalWorkerOptions</span>.<span style="color:#a6e22e">workerSrc</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;https://cdn.jsdelivr.net/npm/pdfjs-dist@3.4.120/build/pdf.worker.min.js&#39;</span>;</span></span></code></pre></div><p><strong>to</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">pdfjsLib</span>.<span style="color:#a6e22e">GlobalWorkerOptions</span>.<span style="color:#a6e22e">workerSrc</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;{{.Site.BaseURL}}&#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;js/pdf-js/build/pdf.worker.js&#39;</span>;</span></span></code></pre></div><h2 id="support" class="heading-element"><span>Support</span>
+  <a href="#support" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p><a href="#table-of-contents">[Back to Top]</a>
+You an reach me at:</p>
+<ul>
+<li>Twitter : <a href="https://twitter.com/anvith3"target="_blank" rel="external nofollow noopener noreferrer">@anvith3</a></li>
+</ul>
+<p>For any bugs, enhancement requests, feature requests please raise issues <a href="https://github.com/anvithks/hugo-embed-pdf-shortcode/issues"target="_blank" rel="external nofollow noopener noreferrer">here</a></p>
+<h2 id="who-uses-hugo-embed-pdf-shortcode" class="heading-element"><span>Who uses Hugo Embed Pdf Shortcode</span>
+  <a href="#who-uses-hugo-embed-pdf-shortcode" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p><a href="#table-of-contents">[Back to Top]</a></p>
+<p><a href="https://changelog.deimeke.ruhr/2019/08/11/workshop-20190811/"target="_blank" rel="external nofollow noopener noreferrer">Dirk&rsquo;s Changelog</a><br>
+<a href="https://sysadmin.info.pl/pl/blog/moja-praca-inzynierska/"target="_blank" rel="external nofollow noopener noreferrer">SYSADMIN - Administration, security and hardening of Linux</a></p>
+<h2 id="license" class="heading-element"><span>License</span>
+  <a href="#license" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p><a href="#table-of-contents">[Back to Top]</a></p>
+<p><a href="https://badges.mit-license.org"target="_blank" rel="external nofollow noopener noreferrer"><img loading="lazy" src="https://img.shields.io/:license-mit-blue.svg?style=flat-square" alt="License" srcset="https://img.shields.io/:license-mit-blue.svg?style=flat-square&amp;size=small, https://img.shields.io/:license-mit-blue.svg?style=flat-square&amp;size=medium 1.5x, https://img.shields.io/:license-mit-blue.svg?style=flat-square&amp;size=large 2x" data-title="License" class="suffix-invalid suffix-invalid__small suffix-invalid__large" style="background: url(/CTGU-Hugo-Blog.io/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/></a></p>
+<ul>
+<li><strong><a href="https://opensource.org/licenses/mit-license.php"target="_blank" rel="external nofollow noopener noreferrer">MIT license</a></strong></li>
+</ul>]]></description>
+</item>
+<item>
+  <title>第一个尝试 关于FixIt插入视频</title>
+  <link>http://localhost:1313/CTGU-Hugo-Blog.io/posts/%E5%B0%9D%E8%AF%95-fixit-shortcode/</link>
+  <pubDate>Thu, 11 Jul 2024 22:10:50 &#43;0800</pubDate>
+  <author>Author</author>
+  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/posts/%E5%B0%9D%E8%AF%95-fixit-shortcode/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>扩展 Shortcode - bilibili</title>
+  <link>http://localhost:1313/CTGU-Hugo-Blog.io/hugo-learn/%E6%89%A9%E5%B1%95-shortcode---bilibili/</link>
+  <pubDate>Fri, 24 Feb 2023 22:52:50 &#43;0800</pubDate>
+  <author>Author</author>
+  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/hugo-learn/%E6%89%A9%E5%B1%95-shortcode---bilibili/</guid>
+  <description><![CDATA[<p><code>bilibili</code> shortcode 提供了一个内嵌的用来播放 bilibili 视频的响应式播放器。</p>]]></description>
+</item>
+<item>
+  <title>hugo fixitz主题内置 Shortcode</title>
+  <link>http://localhost:1313/CTGU-Hugo-Blog.io/hugo-learn/hugo-fixitz%E4%B8%BB%E9%A2%98%E5%86%85%E7%BD%AE-shortcode/</link>
+  <pubDate>Fri, 24 Feb 2023 22:11:22 &#43;0800</pubDate>
+  <author>Author</author>
+  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/hugo-learn/hugo-fixitz%E4%B8%BB%E9%A2%98%E5%86%85%E7%BD%AE-shortcode/</guid>
+  <description><![CDATA[<p><strong>Hugo</strong> 提供了多个内置的 Shortcodes, 以方便作者保持 Markdown 内容的整洁。</p>]]></description>
+</item>
+</channel>
+</rss>

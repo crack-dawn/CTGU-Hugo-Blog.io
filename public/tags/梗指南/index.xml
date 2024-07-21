@@ -1,23 +1,0 @@
-<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
-  <channel>
-    <title>梗指南 - Tag - A CTGUer&#39;s New Hugo Site</title>
-    <link>http://localhost:1313/CTGU-Hugo-Blog.io/tags/%E6%A2%97%E6%8C%87%E5%8D%97/</link>
-    <description>梗指南 - Tag | A CTGUer&#39;s New Hugo Site</description>
-    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 11 Jul 2024 22:10:50 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/CTGU-Hugo-Blog.io/tags/%E6%A2%97%E6%8C%87%E5%8D%97/" rel="self" type="application/rss+xml" /><item>
-  <title>了解如何在 **FixIt** 主题中快速，直观地创建和组织内容</title>
-  <link>http://localhost:1313/CTGU-Hugo-Blog.io/posts/%E6%89%A9%E5%B1%95-shortcode---bilibili/</link>
-  <pubDate>Thu, 11 Jul 2024 22:10:50 &#43;0800</pubDate>
-  <author>Author</author>
-  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/posts/%E6%89%A9%E5%B1%95-shortcode---bilibili/</guid>
-  <description><![CDATA[了解如何在 FixIt 主题中快速，直观地创建和组织内容。
-&lt;!&ndash;more&ndash;&gt; tags: [&ldquo;FixIt官方文档&rdquo;,&ldquo;hugo FixIt Introduction&rdquo;] categories: [&ldquo;FixIt官方文档&rdquo;]
-内容组织以下是一些方便你清晰管理和生成文章的目录结构建议：
-保持博客文章存放在 content/posts 目录，例如：content/posts/my-first-post.md 保持简单的静态页面存放在 content 目录，例如：content/about.md 本地资源组织 {{&lt; admonition note &quot;本地资源引用&quot; &gt;}} 有三种方法来引用图片和音乐等本地资源：
-使用 页面包 中的 页面资源。 你可以使用适用于 Resources.GetMatch 的值或者直接使用相对于当前页面目录的文件路径来引用页面资源。 将本地资源放在 assets 目录中，默认路径是 /assets。 引用资源的文件路径是相对于 assets 目录的。 将本地资源放在 static 目录中，默认路径是 /static。 引用资源的文件路径是相对于 static 目录的。 引用的优先级符合以上的顺序。
-在这个主题中的很多地方可以使用上面的本地资源引用， 例如 链接, 图片, image shortcode, music shortcode 和前置参数中的部分参数。
-页面资源或者 assets 目录中的 图片处理 会在未来的版本中得到支持。 非常酷的功能！<i class="fa-regular fa-grin-squint fa-fw" aria-hidden="true"></i>
-{{&lt; /admonition &gt;}}
-Front matterHugo 允许你在文章内容前面添加 yaml, toml 或者 json 格式的前置参数，详见 Front matter。]]></description>
-</item>
-</channel>
-</rss>
