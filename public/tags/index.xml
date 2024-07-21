@@ -1,7 +1,23 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Tags - Tag - A CTGUer&#39;s New Hugo Site</title>
+    <title>Tags - 标签 - </title>
     <link>http://localhost:1313/CTGU-Hugo-Blog.io/tags/</link>
-    <description>Tags - Tag | A CTGUer&#39;s New Hugo Site</description>
-    <generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="http://localhost:1313/CTGU-Hugo-Blog.io/tags/" rel="self" type="application/rss+xml" /></channel>
+    <description>Tags - 标签 | </description>
+    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 21 Jul 2024 14:35:04 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/CTGU-Hugo-Blog.io/tags/" rel="self" type="application/rss+xml" /><item>
+  <title>Draft</title>
+  <link>http://localhost:1313/CTGU-Hugo-Blog.io/tags/draft/</link>
+  <pubDate>Sun, 21 Jul 2024 14:35:04 &#43;0800</pubDate>
+  <author>crack-dawn</author>
+  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/tags/draft/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Typst</title>
+  <link>http://localhost:1313/CTGU-Hugo-Blog.io/tags/typst/</link>
+  <pubDate>Sat, 20 Jul 2024 17:08:21 &#43;0800</pubDate>
+  <author>crack-dawn</author>
+  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/tags/typst/</guid>
+  <description><![CDATA[]]></description>
+</item>
+</channel>
 </rss>

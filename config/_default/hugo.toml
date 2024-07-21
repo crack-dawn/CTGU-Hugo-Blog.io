@@ -1,0 +1,9 @@
+# title = "A CTGUer's Hugo Static Site" # 网站主标题
+baseURL = 'https://crack-dawn.github.io/CTGU-Hugo-Blog.io'# 网站根目录
+languageCode = 'en-us'
+defaultContentLanguage = "zh-cn" # 默认语言
+theme = ["hugo-embed-pdf-shortcode", "FixIt"]
+enableInlineShortcodes = true
+
+
+ 

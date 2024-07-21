@@ -71,5 +71,8 @@ git push -u origin master
 4. 慢慢了解hugo的功能框架，本身也是接触硬件多，网站运维知识并不了解；但是hugo的博客搭建，我感觉挺轻快有趣的。
 5. 还没摸清楚 `github action` 和 `github pages`以及`workflow`的使用技巧。 
 
-hugo mod init github.com/crack-dawn/CTGU-Student-Hugo-Blog
-git@github.com:crack-dawn/CTGU-Student-Hugo-Blog.git
+
+6. 建立好项目后，可以尝试修改设置文件,[FixIt主题设置说明](https://fixit.lruihao.cn/zh-cn/documentation/getting-started/configuration/)
+
+<!-- hugo mod init github.com/crack-dawn/CTGU-Student-Hugo-Blog
+git@github.com:crack-dawn/CTGU-Student-Hugo-Blog.git -->

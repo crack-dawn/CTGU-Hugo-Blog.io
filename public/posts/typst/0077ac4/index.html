@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en-us">
+  <head><script src="/CTGU-Hugo-Blog.io/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=CTGU-Hugo-Blog.io/livereload" data-no-instant defer></script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Typst Introduction - </title><meta name="author" content="crack-dawn">
+<meta name="author-link" content="https://github.com/crack-dawn/CTGU-Hugo-Blog.io">
+<meta name="description" content="" /><meta name="keywords" content='typst' />
+  <meta itemprop="name" content="Typst Introduction">
+  <meta itemprop="datePublished" content="2024-07-20T17:08:21+08:00">
+  <meta itemprop="dateModified" content="2024-07-20T17:08:21+08:00">
+  <meta itemprop="wordCount" content="1264">
+  <meta itemprop="keywords" content="Typst"><meta property="og:url" content="http://localhost:1313/CTGU-Hugo-Blog.io/posts/typst/0077ac4/">
+  <meta property="og:title" content="Typst Introduction">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-07-20T17:08:21+08:00">
+    <meta property="article:modified_time" content="2024-07-20T17:08:21+08:00">
+    <meta property="article:tag" content="Typst">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Typst Introduction">
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="http://localhost:1313/CTGU-Hugo-Blog.io/posts/typst/0077ac4/" /><link rel="prev" href="http://localhost:1313/CTGU-Hugo-Blog.io/posts/github-action-learn/0779d18/" /><link rel="next" href="http://localhost:1313/CTGU-Hugo-Blog.io/posts/hugo-learn/f30d7fd/" /><link rel="stylesheet" href="/CTGU-Hugo-Blog.io/css/style.min.css"><link rel="preload" href="/CTGU-Hugo-Blog.io/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/CTGU-Hugo-Blog.io/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/CTGU-Hugo-Blog.io/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/CTGU-Hugo-Blog.io/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Typst Introduction",
+    "inLanguage": "en-us",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/localhost:1313\/CTGU-Hugo-Blog.io\/posts\/typst\/0077ac4\/"
+    },"genre": "posts","keywords": "typst","wordcount":  1264 ,
+    "url": "http:\/\/localhost:1313\/CTGU-Hugo-Blog.io\/posts\/typst\/0077ac4\/","datePublished": "2024-07-20T17:08:21+08:00","dateModified": "2024-07-20T17:08:21+08:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"description": ""
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/CTGU-Hugo-Blog.io/" title=""><img loading="lazy" src="/CTGU-Hugo-Blog.io/my/hugo.svg" alt="/CTGU-Hugo-Blog.io/my/hugo.svg" data-title="/CTGU-Hugo-Blog.io/my/hugo.svg" width="26" height="26" class="logo" style="background: url(/CTGU-Hugo-Blog.io/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span class="header-title-text">A common CTGUer&#39;s blog</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/CTGU-Hugo-Blog.io/posts/"
+                
+                
+              ><i class='fa-solid fa-archive fa-fw fa-sm'></i> 所有文章</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/CTGU-Hugo-Blog.io/categories/"
+                
+                
+              ><i class='fa-solid fa-th fa-fw fa-sm'></i> 分类</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/CTGU-Hugo-Blog.io/tags/"
+                
+                
+              ><i class='fa-solid fa-tags fa-fw fa-sm'></i> 标签</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/CTGU-Hugo-Blog.io/friends/"
+                title="友情链接"
+                
+              ><i class='fa-solid fa-users fa-fw fa-sm'></i> 友链</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/CTGU-Hugo-Blog.io/course/"
+                
+                
+              ><i class='fa-solid fa-rss'></i> 专栏</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/CTGU-Hugo-Blog.io/about/"
+                
+                
+              ><i class='fa-solid fa-info-circle fa-fw fa-sm'></i> 关于</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="https://github.com/crack-dawn/CTGU-Hugo-Blog.io"
+                title="GitHub"
+                rel="noopener noreferrer" target="_blank"
+              ><i class='fa-brands fa-github fa-fw'></i> 仓库</a></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" title="切换主题">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/CTGU-Hugo-Blog.io/" title=""><img loading="lazy" src="/CTGU-Hugo-Blog.io/my/hugo.svg" alt="/CTGU-Hugo-Blog.io/my/hugo.svg" data-title="/CTGU-Hugo-Blog.io/my/hugo.svg" width="26" height="26" class="logo" style="background: url(/CTGU-Hugo-Blog.io/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span class="header-title-text">A common CTGUer&#39;s blog</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/CTGU-Hugo-Blog.io/posts/"
+                  
+                  
+                ><i class='fa-solid fa-archive fa-fw fa-sm'></i> 所有文章</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/CTGU-Hugo-Blog.io/categories/"
+                  
+                  
+                ><i class='fa-solid fa-th fa-fw fa-sm'></i> 分类</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/CTGU-Hugo-Blog.io/tags/"
+                  
+                  
+                ><i class='fa-solid fa-tags fa-fw fa-sm'></i> 标签</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/CTGU-Hugo-Blog.io/friends/"
+                  title="友情链接"
+                  
+                ><i class='fa-solid fa-users fa-fw fa-sm'></i> 友链</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/CTGU-Hugo-Blog.io/course/"
+                  
+                  
+                ><i class='fa-solid fa-rss'></i> 专栏</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/CTGU-Hugo-Blog.io/about/"
+                  
+                  
+                ><i class='fa-solid fa-info-circle fa-fw fa-sm'></i> 关于</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="https://github.com/crack-dawn/CTGU-Hugo-Blog.io"
+                  title="GitHub"
+                  rel="noopener noreferrer" target="_blank"
+                ><i class='fa-brands fa-github fa-fw'></i> 仓库</a></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="切换主题"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
+</header><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><a href="https://github.com/typst/typst/blob/main/README.md?plain=1" title="转载 -&gt; https://github.com/typst/typst/blob/main/README.md?plain=1"target="_blank" rel="external nofollow noopener noreferrer" class="icon-repost"><i class="fa-solid fa-share fa-fw" aria-hidden="true"></i>
+    </a><span>Typst Introduction</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      Anonymous</span></span><span class="post-included-in">&nbsp;收录于 <a href="/CTGU-Hugo-Blog.io/categories/typst/" class="post-category" title="分类 - Typst"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Typst</a></span></div><div class="post-meta-line"><span title="发布于 2024-07-20 17:08:21"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2024-07-20">2024-07-20</time></span>&nbsp;<span title="1264 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 1300 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 6 分钟</span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#example">Example</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#community">Community</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#pronunciation-and-spelling">Pronunciation and Spelling</a></li>
+    <li><a href="#design-principles">Design Principles</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Typst is a new markup-based typesetting system that is designed to be as powerful
+as LaTeX while being much easier to learn and use. Typst has:</p>
+<ul>
+<li>Built-in markup for the most common formatting tasks</li>
+<li>Flexible functions for everything else</li>
+<li>A tightly integrated scripting system</li>
+<li>Math typesetting, bibliography management, and more</li>
+<li>Fast compile times thanks to incremental compilation</li>
+<li>Friendly error messages in case something goes wrong</li>
+</ul>
+<p>This repository contains the Typst compiler and its CLI, which is everything you
+need to compile Typst documents locally. For the best writing experience,
+consider signing up to our <a href="https://typst.app/"target="_blank" rel="external nofollow noopener noreferrer">collaborative online editor</a> for free. It is
+currently in public beta.</p>
+<h2 id="example" class="heading-element"><span>Example</span>
+  <a href="#example" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>A <a href="https://typst.app/docs/tutorial/"target="_blank" rel="external nofollow noopener noreferrer">gentle introduction</a> to Typst is available in our documentation.
+However, if you want to see the power of Typst encapsulated in one image, here
+it is:</p>
+<!-- raw HTML omitted -->
+<p>Let&rsquo;s dissect what&rsquo;s going on:</p>
+<ul>
+<li>
+<p>We use <em>set rules</em> to configure element properties like the size of pages or
+the numbering of headings. By setting the page height to <code>auto</code>, it scales to
+fit the content. Set rules accommodate the most common configurations. If you
+need full control, you can also use <a href="https://typst.app/docs/reference/styling/#show-rules"target="_blank" rel="external nofollow noopener noreferrer">show rules</a> to completely redefine
+the appearance of an element.</p>
+</li>
+<li>
+<p>We insert a heading with the <code>= Heading</code> syntax. One equals sign creates a top
+level heading, two create a subheading and so on. Typst has more lightweight
+markup like this, see the <a href="https://typst.app/docs/reference/syntax/"target="_blank" rel="external nofollow noopener noreferrer">syntax</a> reference for a full list.</p>
+</li>
+<li>
+<p><a href="https://typst.app/docs/reference/math/"target="_blank" rel="external nofollow noopener noreferrer">Mathematical equations</a> are enclosed in dollar signs. By adding extra
+spaces around the contents of an equation, we can put it into a separate block.
+Multi-letter identifiers are interpreted as Typst definitions and functions
+unless put into quotes. This way, we don&rsquo;t need backslashes for things like
+<code>floor</code> and <code>sqrt</code>. And <code>phi.alt</code> applies the <code>alt</code> modifier to the <code>phi</code> to
+select a particular symbol variant.</p>
+</li>
+<li>
+<p>Now, we get to some <a href="https://typst.app/docs/reference/scripting/"target="_blank" rel="external nofollow noopener noreferrer">scripting</a>. To input code into a Typst document, we can
+write a hash followed by an expression. We define two variables and a
+recursive function to compute the n-th fibonacci number. Then, we display the
+results in a center-aligned table. The table function takes its cells
+row-by-row. Therefore, we first pass the formulas <code>$F_1$</code> to <code>$F_8$</code> and then
+the computed fibonacci numbers. We apply the spreading operator (<code>..</code>) to both
+because they are arrays and we want to pass the arrays&rsquo; items as individual
+arguments.</p>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<pre tabindex="0"><code class="language-typst" data-lang="typst">#set page(width: 10cm, height: auto)
+#set heading(numbering: &#34;1.&#34;)
+
+= Fibonacci sequence
+The Fibonacci sequence is defined through the
+recurrence relation $F_n = F_(n-1) + F_(n-2)$.
+It can also be expressed in _closed form:_
+
+$ F_n = round(1 / sqrt(5) phi.alt^n), quad
+  phi.alt = (1 + sqrt(5)) / 2 $
+
+#let count = 8
+#let nums = range(1, count + 1)
+#let fib(n) = (
+  if n &lt;= 2 { 1 }
+  else { fib(n - 1) + fib(n - 2) }
+)
+
+The first #count numbers of the sequence are:
+
+#align(center, table(
+  columns: count,
+  ..nums.map(n =&gt; $F_#n$),
+  ..nums.map(n =&gt; str(fib(n))),
+))</code></pre><!-- raw HTML omitted -->
+<h2 id="installation" class="heading-element"><span>Installation</span>
+  <a href="#installation" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>Typst&rsquo;s CLI is available from different sources:</p>
+<ul>
+<li>
+<p>You can get sources and pre-built binaries for the latest release of Typst
+from the <a href="https://github.com/typst/typst/releases/"target="_blank" rel="external nofollow noopener noreferrer">releases page</a>. Download the archive for your platform and
+place it in a directory that is in your <code>PATH</code>. To stay up to date with future
+releases, you can simply run <code>typst update</code>.</p>
+</li>
+<li>
+<p>You can install Typst through different package managers. Note that the
+versions in the package managers might lag behind the latest release.</p>
+<ul>
+<li>Linux: View <a href="https://repology.org/project/typst/versions"target="_blank" rel="external nofollow noopener noreferrer">Typst on Repology</a></li>
+<li>macOS: <code>brew install typst</code></li>
+<li>Windows: <code>winget install --id Typst.Typst</code></li>
+</ul>
+</li>
+<li>
+<p>If you have a <a href="https://rustup.rs/"target="_blank" rel="external nofollow noopener noreferrer">Rust</a> toolchain installed, you can install</p>
+<ul>
+<li>the latest released Typst version with
+<code>cargo install --locked typst-cli</code></li>
+<li>a development version with
+<code>cargo install --git https://github.com/typst/typst --locked typst-cli</code></li>
+</ul>
+</li>
+<li>
+<p>Nix users can</p>
+<ul>
+<li>use the <code>typst</code> package with <code>nix-shell -p typst</code></li>
+<li>build and run a development version with
+<code>nix run github:typst/typst -- --version</code>.</li>
+</ul>
+</li>
+<li>
+<p>Docker users can run a prebuilt image with
+<code>docker run -it ghcr.io/typst/typst:latest</code>.</p>
+</li>
+</ul>
+<h2 id="usage" class="heading-element"><span>Usage</span>
+  <a href="#usage" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>Once you have installed Typst, you can use it like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Creates `file.pdf` in working directory.</span>
+</span></span><span style="display:flex;"><span>typst compile file.typ
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Creates PDF file at the desired path.</span>
+</span></span><span style="display:flex;"><span>typst compile path/to/source.typ path/to/output.pdf</span></span></code></pre></div><p>You can also watch source files and automatically recompile on changes. This is
+faster than compiling from scratch each time because Typst has incremental
+compilation.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Watches source files and recompiles on changes.</span>
+</span></span><span style="display:flex;"><span>typst watch file.typ</span></span></code></pre></div><p>Typst further allows you to add custom font paths for your project and list all
+of the fonts it discovered:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Adds additional directories to search for fonts.</span>
+</span></span><span style="display:flex;"><span>typst compile --font-path path/to/fonts file.typ
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Lists all of the discovered fonts in the system and the given directory.</span>
+</span></span><span style="display:flex;"><span>typst fonts --font-path path/to/fonts
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Or via environment variable (Linux syntax).</span>
+</span></span><span style="display:flex;"><span>TYPST_FONT_PATHS<span style="color:#f92672">=</span>path/to/fonts typst fonts</span></span></code></pre></div><p>For other CLI subcommands and options, see below:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span><span style="color:#75715e"># Prints available subcommands and options.</span>
+</span></span><span style="display:flex;"><span>typst help
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Prints detailed usage of a subcommand.</span>
+</span></span><span style="display:flex;"><span>typst help watch</span></span></code></pre></div><p>If you prefer an integrated IDE-like experience with autocompletion and instant
+preview, you can also check out the <a href="https://typst.app/"target="_blank" rel="external nofollow noopener noreferrer">Typst web app</a>, which is currently in
+public beta.</p>
+<h2 id="community" class="heading-element"><span>Community</span>
+  <a href="#community" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>The main place where the community gathers is our <a href="https://discord.gg/2uDybryKPe"target="_blank" rel="external nofollow noopener noreferrer">Discord server</a>.
+Feel free to join there to ask questions, help out others, share cool things
+you created with Typst, or just to chat.</p>
+<p>Aside from that there are a few places where you can find things built by
+the community:</p>
+<ul>
+<li>The official <a href="https://typst.app/docs/packages"target="_blank" rel="external nofollow noopener noreferrer">package list</a></li>
+<li>The <a href="https://github.com/qjcg/awesome-typst"target="_blank" rel="external nofollow noopener noreferrer">Awesome Typst</a> repository</li>
+</ul>
+<p>If you had a bad experience in our community, please <a href="https://typst.app/contact"target="_blank" rel="external nofollow noopener noreferrer">reach out to us</a>.</p>
+<h2 id="contributing" class="heading-element"><span>Contributing</span>
+  <a href="#contributing" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>We would love to see contributions from the community. If you experience bugs,
+feel free to open an issue. If you would like to implement a new feature or bug
+fix, please follow the steps outlined in the <a href="https://github.com/typst/typst/blob/main/CONTRIBUTING.md"target="_blank" rel="external nofollow noopener noreferrer">contribution guide</a>.</p>
+<p>To build Typst yourself, first ensure that you have the
+<a href="https://rustup.rs/"target="_blank" rel="external nofollow noopener noreferrer">latest stable Rust</a> installed. Then, clone this repository and build the
+CLI with the following commands:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>git clone https://github.com/typst/typst
+</span></span><span style="display:flex;"><span>cd typst
+</span></span><span style="display:flex;"><span>cargo build --release</span></span></code></pre></div><p>The optimized binary will be stored in <code>target/release/</code>.</p>
+<p>Another good way to contribute is by <a href="https://github.com/typst/packages/"target="_blank" rel="external nofollow noopener noreferrer">sharing packages</a> with the
+community.</p>
+<h2 id="pronunciation-and-spelling" class="heading-element"><span>Pronunciation and Spelling</span>
+  <a href="#pronunciation-and-spelling" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>IPA: /taɪpst/. &ldquo;Ty&rdquo; like in <strong>Ty</strong>pesetting and &ldquo;pst&rdquo; like in Hi<strong>pst</strong>er. When
+writing about Typst, capitalize its name as a proper noun, with a capital &ldquo;T&rdquo;.</p>
+<h2 id="design-principles" class="heading-element"><span>Design Principles</span>
+  <a href="#design-principles" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>All of Typst has been designed with three key goals in mind: Power,
+simplicity, and performance. We think it&rsquo;s time for a system that matches the
+power of LaTeX, is easy to learn and use, all while being fast enough to realize
+instant preview. To achieve these goals, we follow three core design principles:</p>
+<ul>
+<li>
+<p><strong>Simplicity through Consistency:</strong>
+If you know how to do one thing in Typst, you should be able to transfer that
+knowledge to other things. If there are multiple ways to do the same thing,
+one of them should be at a different level of abstraction than the other. E.g.
+it&rsquo;s okay that <code>= Introduction</code> and <code>#heading[Introduction]</code> do the same thing
+because the former is just syntax sugar for the latter.</p>
+</li>
+<li>
+<p><strong>Power through Composability:</strong>
+There are two ways to make something flexible: Have a knob for everything or
+have a few knobs that you can combine in many ways. Typst is designed with the
+second way in mind. We provide systems that you can compose in ways we&rsquo;ve
+never even thought of. TeX is also in the second category, but it&rsquo;s a bit
+low-level and therefore people use LaTeX instead. But there, we don&rsquo;t really
+have that much composability. Instead, there&rsquo;s a package for everything
+(<code>\usepackage{knob}</code>).</p>
+</li>
+<li>
+<p><strong>Performance through Incrementality:</strong>
+All Typst language features must accommodate for incremental compilation.
+Luckily we have <a href="https://github.com/typst/comemo/"target="_blank" rel="external nofollow noopener noreferrer"><code>comemo</code></a>, a system for incremental compilation which does
+most of the hard work in the background.</p>
+</li>
+</ul></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2024-07-20 17:08:21">更新于 2024-07-20&nbsp;</span>
+      </div></div><div class="post-info-line">
+        <div class="post-info-md"></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 Linkedin" data-sharer="linkedin" data-url="http://localhost:1313/CTGU-Hugo-Blog.io/posts/typst/0077ac4/"><i class="fa-brands fa-linkedin fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://localhost:1313/CTGU-Hugo-Blog.io/posts/typst/0077ac4/" data-title="Typst Introduction"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 百度" data-sharer="baidu" data-url="http://localhost:1313/CTGU-Hugo-Blog.io/posts/typst/0077ac4/" data-title="Typst Introduction"><i data-svg-src="/CTGU-Hugo-Blog.io/lib/simple-icons/icons/baidu.min.svg" aria-hidden="true"></i></a>
+  </span>
+        </div>
+      </div></div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/CTGU-Hugo-Blog.io/tags/typst/" class="post-tag" title="标签 - Typst">Typst</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/CTGU-Hugo-Blog.io/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/CTGU-Hugo-Blog.io/posts/github-action-learn/0779d18/" class="post-nav-item" rel="prev" title="1.github Action Introduction"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>1.github Action Introduction</a>
+      <a href="/CTGU-Hugo-Blog.io/posts/hugo-learn/f30d7fd/" class="post-nav-item" rel="next" title="2.hugo学习 插入图片 资源存放">2.hugo学习 插入图片 资源存放<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.128.2"><img class="hugo-icon" src="/CTGU-Hugo-Blog.io/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.3.8"><img class="fixit-icon" src="/CTGU-Hugo-Blog.io/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">
+              <a href="https://github.com/crack-dawn/CTGU-Hugo-Blog.io"target="_blank" rel="external nofollow noopener noreferrer">crack-dawn</a></span></div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>
+        </div></div><div id="mask"></div><div class="reading-progress-bar" style="left: 0;bottom: 0;width: calc(100% - var(--progress));"></div><noscript>
+    <div class="noscript-warning">该网站在启用 JavaScript 的情况下效果最佳。</div>
+  </noscript>
+</div><link rel="stylesheet" href="/CTGU-Hugo-Blog.io/lib/cookieconsent/cookieconsent.min.css"><link rel="stylesheet" href="/CTGU-Hugo-Blog.io/lib/pace/themes/blue/pace-theme-minimal.css"><script src="/CTGU-Hugo-Blog.io/lib/sharer/sharer.min.js" async defer></script><script src="/CTGU-Hugo-Blog.io/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/CTGU-Hugo-Blog.io/lib/cell-watermark/watermark.min.js" defer></script><script src="/CTGU-Hugo-Blog.io/lib/pace/pace.min.js" async defer></script><script>window.config={"code":{"copyTitle":"复制到剪贴板","editLockTitle":"锁定可编辑代码块","editUnLockTitle":"解锁可编辑代码块","editable":true,"maxShownLines":10},"comment":{"enable":false},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验。"},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"version":"v0.3.8","watermark":{"appendto":".wrapper\u003emain","colspacing":30,"content":"皂荚","enable":true,"fontfamily":"inherit","fontsize":0.85,"height":20,"opacity":0.1,"rotate":15,"rowspacing":60,"width":150}};</script><script src="/CTGU-Hugo-Blog.io/js/theme.min.js" defer></script></body>
+</html>
