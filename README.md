@@ -3,6 +3,9 @@
 
 我尝试创建的模板hugo静态github pages：
 https://crack-dawn.github.io/CTGU-Hugo-Blog.io/
+
+所有设置参考：
+https://fixit.lruihao.cn/zh-cn/documentation/getting-started/configuration/
  
 
 ## 1.如何快速创建hugo博客仓库/个人笔记
