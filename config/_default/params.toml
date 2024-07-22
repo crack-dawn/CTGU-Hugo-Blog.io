@@ -1,6 +1,6 @@
-# [ibruce]
-#     enable = true
-#     enablePost = true
+[ibruce]
+     enable = true
+     enablePost = true
 
 [gitInfo]
     repo = "https://github.com/crack-dawn/CTGU-Hugo-Blog.io"
