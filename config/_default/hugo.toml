@@ -2,8 +2,25 @@
 baseURL = 'https://crack-dawn.github.io/CTGU-Hugo-Blog.io'# 网站根目录
 languageCode = 'en-us'
 defaultContentLanguage = "zh-cn" # 默认语言
-theme = ["hugo-embed-pdf-shortcode", "FixIt"]
+theme = ["FixIt"]
+
+enableComments = true
 enableInlineShortcodes = true
 
 
- 
+# whether to use robots.txt
+# 是否使用 robots.txt
+enableRobotsTXT = true
+# whether to use git commit log
+# 是否使用 git 信息
+enableGitInfo = true
+
+# whether to use emoji code
+# 是否使用 emoji 代码
+enableEmoji = true
+
+# the editor to use when creating new content
+# 创建新内容时使用的编辑器
+newContentEditor = "code"
+
+# hugo --gc -e production

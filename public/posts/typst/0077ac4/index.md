@@ -1,58 +1,32 @@
----
-title: Typst Introduction
-subtitle:
-date: 2024-07-20T17:08:21+08:00
-slug: 0077ac4
-comment: true
-draft: false
-author:
-  name:
-  link:
-  email:
-  avatar:
-description:
-summary:
-keywords:
-license:
-tags: ['typst']
-categories: ['typst']
-toc: true
-math: false
-lightgallery: false
-message:
-repost:
-  enable: true
-  url: https://github.com/typst/typst/blob/main/README.md?plain=1
+# Typst Introduction
 
-# See details front matter: https://fixit.lruihao.cn/documentation/content-management/introduction/#front-matter
----
 ## markdown代码块测试
 ```cpp
 代码块
 ```
 
-<!--more-->
-<h1 align="center">
-  <img alt="Typst" src="https://user-images.githubusercontent.com/17899797/226108480-722b770e-6313-40d7-84f2-26bebb55a281.png">
-</h1>
+&lt;!--more--&gt;
+&lt;h1 align=&#34;center&#34;&gt;
+  &lt;img alt=&#34;Typst&#34; src=&#34;https://user-images.githubusercontent.com/17899797/226108480-722b770e-6313-40d7-84f2-26bebb55a281.png&#34;&gt;
+&lt;/h1&gt;
 
-<p align="center">
-  <a href="https://typst.app/docs/">
-    <img alt="Documentation" src="https://img.shields.io/website?down_message=offline&label=docs&up_color=007aff&up_message=online&url=https%3A%2F%2Ftypst.app%2Fdocs"
-  /></a>
-  <a href="https://typst.app/">
-    <img alt="Typst App" src="https://img.shields.io/website?down_message=offline&label=typst.app&up_color=239dad&up_message=online&url=https%3A%2F%2Ftypst.app"
-  /></a>
-  <a href="https://discord.gg/2uDybryKPe">
-    <img alt="Discord Server" src="https://img.shields.io/discord/1054443721975922748?color=5865F2&label=discord&labelColor=555"
-  /></a>
-  <a href="https://github.com/typst/typst/blob/main/LICENSE">
-    <img alt="Apache-2 License" src="https://img.shields.io/badge/license-Apache%202-brightgreen"
-  /></a>
-  <a href="https://typst.app/jobs/">
-    <img alt="Jobs at Typst" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Ftypst.app%2Fassets%2Fdata%2Fshields.json&query=%24.jobs.text&label=jobs&color=%23A561FF&cacheSeconds=1800"
-  /></a>
-</p>
+&lt;p align=&#34;center&#34;&gt;
+  &lt;a href=&#34;https://typst.app/docs/&#34;&gt;
+    &lt;img alt=&#34;Documentation&#34; src=&#34;https://img.shields.io/website?down_message=offline&amp;label=docs&amp;up_color=007aff&amp;up_message=online&amp;url=https%3A%2F%2Ftypst.app%2Fdocs&#34;
+  /&gt;&lt;/a&gt;
+  &lt;a href=&#34;https://typst.app/&#34;&gt;
+    &lt;img alt=&#34;Typst App&#34; src=&#34;https://img.shields.io/website?down_message=offline&amp;label=typst.app&amp;up_color=239dad&amp;up_message=online&amp;url=https%3A%2F%2Ftypst.app&#34;
+  /&gt;&lt;/a&gt;
+  &lt;a href=&#34;https://discord.gg/2uDybryKPe&#34;&gt;
+    &lt;img alt=&#34;Discord Server&#34; src=&#34;https://img.shields.io/discord/1054443721975922748?color=5865F2&amp;label=discord&amp;labelColor=555&#34;
+  /&gt;&lt;/a&gt;
+  &lt;a href=&#34;https://github.com/typst/typst/blob/main/LICENSE&#34;&gt;
+    &lt;img alt=&#34;Apache-2 License&#34; src=&#34;https://img.shields.io/badge/license-Apache%202-brightgreen&#34;
+  /&gt;&lt;/a&gt;
+  &lt;a href=&#34;https://typst.app/jobs/&#34;&gt;
+    &lt;img alt=&#34;Jobs at Typst&#34; src=&#34;https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Ftypst.app%2Fassets%2Fdata%2Fshields.json&amp;query=%24.jobs.text&amp;label=jobs&amp;color=%23A561FF&amp;cacheSeconds=1800&#34;
+  /&gt;&lt;/a&gt;
+&lt;/p&gt;
 
 Typst is a new markup-based typesetting system that is designed to be as powerful
 as LaTeX while being much easier to learn and use. Typst has:
@@ -73,12 +47,12 @@ currently in public beta.
 A [gentle introduction][tutorial] to Typst is available in our documentation.
 However, if you want to see the power of Typst encapsulated in one image, here
 it is:
-<p align="center">
- <img alt="Example" width="900" src="https://user-images.githubusercontent.com/17899797/228031796-ced0e452-fcee-4ae9-92da-b9287764ff25.png"/>
-</p>
+&lt;p align=&#34;center&#34;&gt;
+ &lt;img alt=&#34;Example&#34; width=&#34;900&#34; src=&#34;https://user-images.githubusercontent.com/17899797/228031796-ced0e452-fcee-4ae9-92da-b9287764ff25.png&#34;/&gt;
+&lt;/p&gt;
 
 
-Let's dissect what's going on:
+Let&#39;s dissect what&#39;s going on:
 
 - We use _set rules_ to configure element properties like the size of pages or
   the numbering of headings. By setting the page height to `auto`, it scales to
@@ -93,7 +67,7 @@ Let's dissect what's going on:
 - [Mathematical equations][math] are enclosed in dollar signs. By adding extra
   spaces around the contents of an equation, we can put it into a separate block.
   Multi-letter identifiers are interpreted as Typst definitions and functions
-  unless put into quotes. This way, we don't need backslashes for things like
+  unless put into quotes. This way, we don&#39;t need backslashes for things like
   `floor` and `sqrt`. And `phi.alt` applies the `alt` modifier to the `phi` to
   select a particular symbol variant.
 
@@ -103,43 +77,43 @@ Let's dissect what's going on:
   results in a center-aligned table. The table function takes its cells
   row-by-row. Therefore, we first pass the formulas `$F_1$` to `$F_8$` and then
   the computed fibonacci numbers. We apply the spreading operator (`..`) to both
-  because they are arrays and we want to pass the arrays' items as individual
+  because they are arrays and we want to pass the arrays&#39; items as individual
   arguments.
 
-<details>
-  <summary>Text version of the code example.</summary>
+&lt;details&gt;
+  &lt;summary&gt;Text version of the code example.&lt;/summary&gt;
 
   ```typst
   #set page(width: 10cm, height: auto)
-  #set heading(numbering: "1.")
+  #set heading(numbering: &#34;1.&#34;)
 
   = Fibonacci sequence
   The Fibonacci sequence is defined through the
-  recurrence relation $F_n = F_(n-1) + F_(n-2)$.
+  recurrence relation $F_n = F_(n-1) &#43; F_(n-2)$.
   It can also be expressed in _closed form:_
 
   $ F_n = round(1 / sqrt(5) phi.alt^n), quad
-    phi.alt = (1 + sqrt(5)) / 2 $
+    phi.alt = (1 &#43; sqrt(5)) / 2 $
 
   #let count = 8
-  #let nums = range(1, count + 1)
+  #let nums = range(1, count &#43; 1)
   #let fib(n) = (
-    if n <= 2 { 1 }
-    else { fib(n - 1) + fib(n - 2) }
+    if n &lt;= 2 { 1 }
+    else { fib(n - 1) &#43; fib(n - 2) }
   )
 
   The first #count numbers of the sequence are:
 
   #align(center, table(
     columns: count,
-    ..nums.map(n => $F_#n$),
-    ..nums.map(n => str(fib(n))),
+    ..nums.map(n =&gt; $F_#n$),
+    ..nums.map(n =&gt; str(fib(n))),
   ))
   ```
-</details>
+&lt;/details&gt;
 
 ## Installation
-Typst's CLI is available from different sources:
+Typst&#39;s CLI is available from different sources:
 
 - You can get sources and pre-built binaries for the latest release of Typst
   from the [releases page][releases]. Download the archive for your platform and
@@ -244,12 +218,12 @@ Another good way to contribute is by [sharing packages][packages] with the
 community.
 
 ## Pronunciation and Spelling
-IPA: /taɪpst/. "Ty" like in **Ty**pesetting and "pst" like in Hi**pst**er. When
-writing about Typst, capitalize its name as a proper noun, with a capital "T".
+IPA: /taɪpst/. &#34;Ty&#34; like in **Ty**pesetting and &#34;pst&#34; like in Hi**pst**er. When
+writing about Typst, capitalize its name as a proper noun, with a capital &#34;T&#34;.
 
 ## Design Principles
 All of Typst has been designed with three key goals in mind: Power,
-simplicity, and performance. We think it's time for a system that matches the
+simplicity, and performance. We think it&#39;s time for a system that matches the
 power of LaTeX, is easy to learn and use, all while being fast enough to realize
 instant preview. To achieve these goals, we follow three core design principles:
 
@@ -257,16 +231,16 @@ instant preview. To achieve these goals, we follow three core design principles:
   If you know how to do one thing in Typst, you should be able to transfer that
   knowledge to other things. If there are multiple ways to do the same thing,
   one of them should be at a different level of abstraction than the other. E.g.
-  it's okay that `= Introduction` and `#heading[Introduction]` do the same thing
+  it&#39;s okay that `= Introduction` and `#heading[Introduction]` do the same thing
   because the former is just syntax sugar for the latter.
 
 - **Power through Composability:**
   There are two ways to make something flexible: Have a knob for everything or
   have a few knobs that you can combine in many ways. Typst is designed with the
-  second way in mind. We provide systems that you can compose in ways we've
-  never even thought of. TeX is also in the second category, but it's a bit
-  low-level and therefore people use LaTeX instead. But there, we don't really
-  have that much composability. Instead, there's a package for everything
+  second way in mind. We provide systems that you can compose in ways we&#39;ve
+  never even thought of. TeX is also in the second category, but it&#39;s a bit
+  low-level and therefore people use LaTeX instead. But there, we don&#39;t really
+  have that much composability. Instead, there&#39;s a package for everything
   (`\usepackage{knob}`).
 
 - **Performance through Incrementality:**
@@ -290,3 +264,9 @@ instant preview. To achieve these goals, we follow three core design principles:
 [contributing]: https://github.com/typst/typst/blob/main/CONTRIBUTING.md
 [packages]: https://github.com/typst/packages/
 [`comemo`]: https://github.com/typst/comemo/
+
+---
+
+> 作者:   
+> URL: http://localhost:1313/CTGU-Hugo-Blog.io/posts/typst/0077ac4/  
+> 转载 URL: https://github.com/typst/typst/blob/main/README.md?plain=1

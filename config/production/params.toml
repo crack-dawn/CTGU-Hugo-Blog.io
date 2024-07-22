@@ -1,79 +1,41 @@
-# https://fixit.lruihao.cn/zh-cn/documentation/getting-started/configuration/
-
+# -------------------------------------------------------------------------------------
+# Theme Core Configuration | 主题核心配置
+# See: https://fixit.lruihao.cn/documentation/basics/#theme-configuration
+# -------------------------------------------------------------------------------------
 # FixIt 0.2.15 | 更改 评论系统设置
-[page]
 [page.comment]
     enable = true
-    # # FixIt 0.1.1 | 新增 Disqus 评论系统设置 (https://disqus.com)
-    # [page.comment.disqus]
-    #     enable = false
-    #     # Disqus 的 shortname，用来在文章中启用 Disqus 评论系统
-    #     shortname = ""
-
-    # # Valine 评论系统设置 (https://github.com/xCss/Valine)
-    # [page.comment.valine]
-    #     enable = false
-    #     appId = "5ohXkkHa0yBfcVfveK5VHpHD-MdYXbMMI"
-    #     appKey = "OFjnVDlI0MAs1dUsFwcRnYZS"
-    #     placeholder = ""
-    #     avatar = "mp"
-    #     meta = ""
-    #     requiredFields = "leave your comments"
-    #     pageSize = 10
-    #     lang = ""
-    #     visitor = true
-    #     recordIP = false
-    #     highlight = true
-    #     enableQQ = false
-    #     serverURLs = "https://5ohxkkha.api.lncldglobal.com"
-    #     # emoji 数据文件名称，默认是 "google.yml"
-    #     # ["apple.yml", "google.yml", "facebook.yml", "twitter.yml"]
-    #     # 位于 "themes/FixIt/assets/lib/valine/emoji/" 目录
-    #     # 可以在你的项目下相同路径存放你自己的数据文件：
-    #     # "assets/lib/valine/emoji/"
-    #     emoji = ""
-    #     # emoji = [
-    #     #   "https://unpkg.com/@waline/emojis@1.1.0/bmoji",
-    #     #   "https://unpkg.com/@waline/emojis@1.1.0/qq",
-    #     #   "https://unpkg.com/@waline/emojis@1.1.0/alus",
-    #     #   "//unpkg.com/@waline/emojis@1.1.0/weibo",
-    #     # ]
-    #     commentCount = true # FixIt 0.2.13 | 新增
-    # # FixIt 0.2.16 | 更改 Waline 评论系统设置 (https://waline.js.org)
-    # [page.comment.waline]
-    # enable = false
-    # serverURL = ""
-    # pageview = false # FixIt 0.2.15 | 新增
-    # emoji = [
-    #   "https://unpkg.com/@waline/emojis@1.1.0/bmoji",
-    #   "https://unpkg.com/@waline/emojis@1.1.0/qq",
-    #   "https://unpkg.com/@waline/emojis@1.1.0/alus",
-    #   "//unpkg.com/@waline/emojis@1.1.0/weibo",
-    # ]
-    # meta = ["nick", "mail", "link"]
-    # requiredMeta = []
-    # login = "enable"
-    # wordLimit = 0
-    # pageSize = 10
-    # imageUploader = false # FixIt 0.2.15 | 新增
-    # highlighter = false # FixIt 0.2.15 | 新增
-    # comment = false # FixIt 0.2.15 | 新增
-    # texRenderer = false # FixIt 0.2.16 | 新增
-    # search = false # FixIt 0.2.16 | 新增
-    # recaptchaV3Key = "" # FixIt 0.2.16 | 新增
-    # turnstileKey = "" # FixIt 0.3.8 | 新增
-    # reaction = false # FixIt 0.2.18 | 新增
-
-    # FixIt 0.2.14 | 新增 Giscus 评论系统设置
-    [page.comment.giscus]
+    # FixIt 0.2.16 | 更改 Waline 评论系统设置 (https://waline.js.org)
+    [page.comment.waline]
         enable = true
-        repo = "crack-dawn/CTGU-Hugo-Blog.io"
-        repoId = "R_kgDOMVEAbA"
-        category = "Announcements"
-        categoryId = "DIC_kwDOMVEAbM4Cgw8A"
-        mapping = "pathname"
-    
-        # origin = "https://giscus.app" # FixIt 0.3.7 | 新增 Or set it to your self-hosted domain
+        serverURL = "https://walinecomment-crack-dawns-projects.vercel.app/"
+        pageview = false # FixIt 0.2.15 | 新增
+        emoji = [
+            "https://unpkg.com/@waline/emojis@1.1.0/bmoji",
+            "https://unpkg.com/@waline/emojis@1.1.0/qq",
+            "https://unpkg.com/@waline/emojis@1.1.0/alus",
+            "//unpkg.com/@waline/emojis@1.1.0/weibo",]
+        # meta = ["nick", "mail", "link"]
+        requiredMeta = ["mail"]
+        login = "disable"
+        wordLimit = 0
+        pageSize = 10
+        imageUploader = true # FixIt 0.2.15 | 新增
+        highlighter = true # FixIt 0.2.15 | 新增
+        comment = true # FixIt 0.2.15 | 新增
+        texRenderer = true # FixIt 0.2.16 | 新增
+        search = false # FixIt 0.2.16 | 新增
+        recaptchaV3Key = "" # FixIt 0.2.16 | 新增
+        turnstileKey = "" # FixIt 0.3.8 | 新增
+        reaction = false # FixIt 0.2.18 | 新增
+    [page.comment.giscus]
+        enable = false
+        repo = ""
+        repoId = ""
+        category = ""
+        categoryId = ""
+        mapping = ""
+        origin = "https://giscus.app" # FixIt 0.3.7 | 新增 Or set it to your self-hosted domain
         strict = "0" # FixIt 0.2.18 | 新增
         term = ""
         reactionsEnabled = "1"
@@ -83,10 +45,48 @@
         darkTheme = "dark"
         lazyLoad = true
 
+# <script src="https://giscus.app/client.js"
+#         data-repo="crack-dawn/CTGU-Hugo-Blog.io"
+#         data-repo-id="R_kgDOMVEAbA"
+#         data-category="General"
+#         data-category-id="DIC_kwDOMVEAbM4Cgw8B"
+#         data-mapping="pathname"
+#         data-strict="0"
+#         data-reactions-enabled="1"
+#         data-emit-metadata="0"
+#         data-input-position="top"
+#         data-theme="preferred_color_scheme"
+#         data-lang="zh-CN"
+#         data-loading="lazy"
+#         crossorigin="anonymous"
+#         async>
+# </script>
 
-# 生产环境时启用“不蒜子”计数器，以显示页面访问数的统计量
-# "enable": 决定是否要显示站点的总访客数及总访问量
-# "enablePost": 是否是否要显示每个页面各自的访客数及访问量
-[ibruce]
-  enable = true
-  enablePost = true
+
+# FixIt 0.2.12 | NEW Busuanzi count
+# FixIt 0.2.12 | NEW 不蒜子统计
+# [ibruce]
+#   enable = true
+#   enablePost = true
+
+
+# # 第三方库配置
+# [params.page.library]
+#   [params.page.library.css]
+#     # someCSS = "some.css"
+#     # 位于 "assets/"
+#     # 或者
+#     # someCSS = "https://cdn.example.com/some.css"
+#   [params.page.library.js]
+#     # someJavascript = "some.js"
+#     # 位于 "assets/"
+#     # 或者
+#     # someJavascript = "https://cdn.example.com/some.js"
+# # 页面 SEO 配置
+# [params.page.seo]
+#   # 图片 URL
+#   images = []
+#   # 出版者信息
+#   [params.page.seo.publisher]
+#     name = ""
+#     logoUrl = ""
