@@ -2,6 +2,12 @@
 #     enable = true
 #     enablePost = true
 
+[gitInfo]
+    repo = "https://github.com/crack-dawn/CTGU-Hugo-Blog.io"
+    branch = "master"
+    dir = "content"
+    issueTpl = "title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0A|URL|{URL}|%0A|Filename|{sourceURL}|"
+
 [backToTop]
     enable = true
     scrollpercent = true
@@ -102,13 +108,6 @@
     Discord = ""
     Email = ""
     RSS = true
-
-
-[gitInfo]
-    repo = "https://crack-dawn.github.io/CTGU-Hugo-Blog.io/"
-    branch = "master"
-    dir = "content"
-    issueTpl = "title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0A|URL|{URL}|%0A|Filename|{sourceURL}|"
 
 
 # 更改文章页面配置

@@ -5,8 +5,6 @@ defaultContentLanguage = "zh-cn" # 默认语言
 theme = ["FixIt"]
 
 enableComments = true
-enableInlineShortcodes = true
-
 
 # whether to use robots.txt
 # 是否使用 robots.txt
@@ -24,3 +22,7 @@ enableEmoji = true
 newContentEditor = "code"
 
 # hugo --gc -e production
+
+
+## 其他主题插件 设置项
+enableInlineShortcodes = true
