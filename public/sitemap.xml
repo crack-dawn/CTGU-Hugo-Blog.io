@@ -2,11 +2,12 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   ><url>
-      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/</loc><lastmod>2024-07-22T14:13:17&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/</loc><lastmod>2024-07-22T17:41:03&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/friends/</loc><lastmod>2024-07-22T17:41:03&#43;08:00</lastmod></url><url>
       <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/hugo-learn/f30d7fd/</loc><lastmod>2024-07-22T14:13:17&#43;08:00</lastmod></url><url>
       <loc>http://localhost:1313/CTGU-Hugo-Blog.io/categories/</loc><lastmod>2024-07-22T14:13:17&#43;08:00</lastmod></url><url>
       <loc>http://localhost:1313/CTGU-Hugo-Blog.io/tags/draft/</loc><lastmod>2024-07-22T14:13:17&#43;08:00</lastmod></url><url>
-      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/categories/draft/</loc><lastmod>2024-07-22T14:13:17&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/categories/hugo%E5%AD%A6%E4%B9%A0/</loc><lastmod>2024-07-22T14:13:17&#43;08:00</lastmod></url><url>
       <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/</loc><lastmod>2024-07-22T14:13:17&#43;08:00</lastmod></url><url>
       <loc>http://localhost:1313/CTGU-Hugo-Blog.io/tags/</loc><lastmod>2024-07-22T14:13:17&#43;08:00</lastmod></url><url>
       <loc>http://localhost:1313/CTGU-Hugo-Blog.io/tags/typst/</loc><lastmod>2024-07-22T14:13:17&#43;08:00</lastmod></url><url>
@@ -14,7 +15,6 @@
       <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/typst/0077ac4/</loc><lastmod>2024-07-22T14:13:17&#43;08:00</lastmod></url><url>
       <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/github-action-learn/0779d18/</loc><lastmod>2024-07-21T15:03:03&#43;08:00</lastmod></url><url>
       <loc>http://localhost:1313/CTGU-Hugo-Blog.io/categories/github-action/</loc><lastmod>2024-07-21T15:03:03&#43;08:00</lastmod></url><url>
-      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/categories/hugo%E5%AD%A6%E4%B9%A0/</loc><lastmod>2024-07-21T15:03:03&#43;08:00</lastmod></url><url>
       <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/hugo-learn/7f5c7db/</loc><lastmod>2024-07-21T15:03:03&#43;08:00</lastmod></url><url>
       <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/hugo-learn/1.hugo%E5%B0%9D%E8%AF%95-fixit%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91/</loc><lastmod>2024-07-21T15:03:03&#43;08:00</lastmod></url><url>
       <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/hugo-learn/hugo%E5%AD%A6%E4%B9%A0-%E5%86%85%E7%BD%AEshortcode/</loc><lastmod>2024-07-21T15:03:03&#43;08:00</lastmod></url><url>

@@ -94,20 +94,19 @@
     title = "显而不易见" # 主页显示的网站标题 (支持 HTML 格式)
     subtitle = "追求星辰大海,还是沉湎虚拟现实?" # 主页显示的网站副标题
     typeit = true # 是否为副标题显示打字机动画
-    social = false # 是否显示社交账号
+    social = true # 是否显示社交账号
     disclaimer = "" # 免责声明 (支持 HTML 格式)
   [home.posts]# 主页文章列表
     enable = true
     paginate = 10 # 主页每页显示文章数量
 # 作者的社交信息设置
   [social]
-    GitHub = ""
-    Bilibili = ""
-    QQ = ""
+    GitHub = true
+    Bilibili = true
+    QQ = true
     QQGroup = "" 
     Discord = ""
     Email = ""
-    RSS = true
 
 
 # 更改文章页面配置
@@ -123,7 +122,7 @@
     # FixIt 0.3.0 | 新增 是否在相关文章中隐藏一篇文章
     hiddenFromRelated = false
     # 是否使用 twemoji
-    twemoji = false
+    twemoji = true
     # 是否使用 lightgallery
     # FixIt 0.2.18 | 更改 如果设为 "force"，文章中的图片将强制按照画廊形式呈现
     lightgallery = false

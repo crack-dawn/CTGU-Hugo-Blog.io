@@ -28,3 +28,4 @@ repost:
 ---
 快速建立一个 hugo项目，请参考
 [go Hugo quick start](https://gohugo.io/getting-started/quick-start/)<!--more-->
+https://www.zair.top/links/

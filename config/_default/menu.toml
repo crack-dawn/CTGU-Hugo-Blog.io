@@ -8,7 +8,7 @@
   # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
   post = ""
   name = "所有文章"
-  url = "/posts/"
+  url = "/archives/"
   title = ""
   weight = 1
 [[main]]
