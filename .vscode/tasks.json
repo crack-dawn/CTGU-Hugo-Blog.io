@@ -1,0 +1,43 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {//
+            "type": "shell",
+            "label": "1.hugo serve(本地构建测试)",
+            "command": "hugo serve -D -e production --gc",
+            "isBackground": true,
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {//
+            "label": "2.open browser(打开本地浏览器)",
+            "type": "shell",
+            "windows":{
+                "command": "start http://localhost:1313/CTGU-Hugo-Blog.io/",
+            },
+            "linux":{
+                "command": "xdg-open http://localhost:1313/CTGU-Hugo-Blog.io/",
+            },
+            "osx":{
+                "command": "open http://localhost:1313/CTGU-Hugo-Blog.io/",
+            },
+        },
+        {//
+            "label": "hugo new file(新建博客文件)",
+            "type": "shell",
+            "command":"hugo new ./content/posts/${input:newFileName}"
+        },
+    ],
+
+    "inputs": [
+        {
+        "id": "newFileName",
+        "type": "promptString",
+        "default": "*.md",
+        "description": "输入要创建的文件名"
+        }
+    ],
+}
+ 

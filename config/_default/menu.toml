@@ -1,6 +1,6 @@
 # 中文菜单配置
 [[main]]
-  identifier = "posts"
+  identifier = "archives"
   # 父级菜单项的标识符 (identifier) since v0.2.14
   parent = ""
   # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
