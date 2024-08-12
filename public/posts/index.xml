@@ -3,7 +3,74 @@
     <title>所有文章 - </title>
     <link>http://localhost:1313/CTGU-Hugo-Blog.io/posts/</link>
     <description>所有文章 | </description>
-    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 11 Aug 2024 23:08:01 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/CTGU-Hugo-Blog.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 12 Aug 2024 11:38:27 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/CTGU-Hugo-Blog.io/posts/" rel="self" type="application/rss+xml" /><item>
+  <title>Git基础配置</title>
+  <link>http://localhost:1313/CTGU-Hugo-Blog.io/posts/95a3d7f/</link>
+  <pubDate>Mon, 12 Aug 2024 11:38:27 &#43;0800</pubDate>
+  <author>crack-dawn</author>
+  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/posts/95a3d7f/</guid>
+  <description><![CDATA[<h2 id="首先git-基本配置" class="heading-element"><span>1.首先：Git 基本配置</span>
+  <a href="#%e9%a6%96%e5%85%88git-%e5%9f%ba%e6%9c%ac%e9%85%8d%e7%bd%ae" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>安装好 Git 需要一些基本配置。</p>
+<h3 id="1下载并在本地安装git" class="heading-element"><span>1.1.1.下载，并在本地安装git</span>
+  <a href="#1%e4%b8%8b%e8%bd%bd%e5%b9%b6%e5%9c%a8%e6%9c%ac%e5%9c%b0%e5%ae%89%e8%a3%85git" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>从这里 <a href="https://git-scm.com/downloads"target="_blank" rel="external nofollow noopener noreferrer">https://git-scm.com/downloads</a> ，下载安装适配的git bash版本;</p>
+<h3 id="2配置用户名和邮箱" class="heading-element"><span>1.2.2.配置用户名和邮箱</span>
+  <a href="#2%e9%85%8d%e7%bd%ae%e7%94%a8%e6%88%b7%e5%90%8d%e5%92%8c%e9%82%ae%e7%ae%b1" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h3><p>随便一个位置鼠标右键打开 Git Bash，配置用户名和邮箱。</p>
+<pre tabindex="0"><code>git config --global user.name &#34;用户名&#34;
+git config --global user.email &#34;你的邮箱&#34;</code></pre><p>然后在 Git bash 使用如下命令，查看你的用户名和邮箱配置信息，确认<code>用户名</code>和<code>你的邮箱</code>都填写无误。</p>
+<pre tabindex="0"><code>git config --global user.name
+git config --global user.email</code></pre><h2 id="接着github-创建连接" class="heading-element"><span>2.接着：Github 创建连接</span>
+  <a href="#%e6%8e%a5%e7%9d%80github-%e5%88%9b%e5%bb%ba%e8%bf%9e%e6%8e%a5" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><blockquote>
+<p>创建链接，用于本地与Github服务端进行交互。
+不进行该操作，无法git clone 操作。</p>
+</blockquote>
+<p>如果网站部署在 Github 上的话，需要本地与 Github服务端 创建链接。
+应该进行：</p>
+<pre tabindex="0"><code>1. 生成本地本机公钥文件；
+2. 然后把公钥文件上传到 Github 服务端的操作；
+3. 本地ssh -T git@github.com 测试github端是否创建ssh公钥认证成功。</code></pre><ol>
+<li>生成本地本机公钥文件；
+在本地打开<code>Git Bash命令行终端</code>，输入这行指令，创建公钥文件；</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-BASH" data-lang="BASH"><span class="line"><span class="cl">ssh-keygen -t rsa</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后,<code>Git Bash命令行终端</code>输入这条指令查看公钥文件，并复制保存。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-BASH" data-lang="BASH"><span class="line"><span class="cl">cat ~/.ssh/id_rsa.pub</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>也可以直接到C:\Users\你的用户名.ssh\文件夹下查看 id_rsa.pub 文件</p>
+</blockquote>
+<ol start="2">
+<li></li>
+</ol>
+<p>然后去 Github 添加 SSH 链接。</p>
+<p>登录 GitHub，点击右上角头像，进入设置，把 SSH 公钥填进去就 OK 了。
+再打开 Git Bash，输入下面的命令查看连接 状态。</p>
+<p>ssh -T <a href="mailto:git@github.com"target="_blank" rel="external nofollow noopener noreferrer">git@github.com</a>
+显示下面的内容证明链接成功。</p>]]></description>
+</item>
+<item>
   <title>你好</title>
   <link>http://localhost:1313/CTGU-Hugo-Blog.io/posts/2982ab1/</link>
   <pubDate>Sun, 11 Aug 2024 23:08:01 &#43;0800</pubDate>
@@ -18,18 +85,27 @@ Hello</p>]]></description>
   <pubDate>Sun, 11 Aug 2024 22:56:40 &#43;0800</pubDate>
   <author>crack-dawn</author>
   <guid>http://localhost:1313/CTGU-Hugo-Blog.io/posts/a116deb/</guid>
-  <description><![CDATA[<h2 id="从github拉取hugo博客仓库本地部署" class="heading-element"><span>1.从github拉取hugo博客仓库，本地部署</span>
+  <description><![CDATA[<h2 id="如何hugo建站可以参考" class="heading-element"><span>1.如何hugo建站可以参考：</span>
+  <a href="#%e5%a6%82%e4%bd%95hugo%e5%bb%ba%e7%ab%99%e5%8f%af%e4%bb%a5%e5%8f%82%e8%80%83" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><ol>
+<li><a href="https://www.cnblogs.com/legenddog/p/17632687.html"target="_blank" rel="external nofollow noopener noreferrer">https://www.cnblogs.com/legenddog/p/17632687.html</a></li>
+<li></li>
+</ol>
+<h2 id="从github拉取hugo博客仓库本地部署" class="heading-element"><span>2.从github拉取hugo博客仓库，本地部署</span>
   <a href="#%e4%bb%8egithub%e6%8b%89%e5%8f%96hugo%e5%8d%9a%e5%ae%a2%e4%bb%93%e5%ba%93%e6%9c%ac%e5%9c%b0%e9%83%a8%e7%bd%b2" class="heading-mark">
     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
   </a>
-</h2><h3 id="配置本地hugo环境" class="heading-element"><span>1.1.配置本地hugo环境</span>
+</h2><h3 id="配置本地hugo环境" class="heading-element"><span>2.1.配置本地hugo环境</span>
   <a href="#%e9%85%8d%e7%bd%ae%e6%9c%ac%e5%9c%b0hugo%e7%8e%af%e5%a2%83" class="heading-mark">
     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
   </a>
 </h3><ol>
 <li>安装hugo</li>
 </ol>
-<pre tabindex="0"><code></code></pre><h3 id="拉取仓库到本地" class="heading-element"><span>1.2.拉取仓库到本地</span>
+<p>参考地址：https://gohugo.io/installation/</p>
+<pre tabindex="0"><code></code></pre><h3 id="拉取仓库到本地" class="heading-element"><span>2.2.拉取仓库到本地</span>
   <a href="#%e6%8b%89%e5%8f%96%e4%bb%93%e5%ba%93%e5%88%b0%e6%9c%ac%e5%9c%b0" class="heading-mark">
     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
   </a>
@@ -53,7 +129,7 @@ Hello</p>]]></description>
 </span></span><span class="line"><span class="cl">git submodule init
 </span></span><span class="line"><span class="cl">git submodule update --recursive</span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="vscode作为编辑器配置hugo任务" class="heading-element"><span>1.3.vscode作为编辑器，配置hugo任务</span>
+</div><h3 id="vscode作为编辑器配置hugo任务" class="heading-element"><span>2.3.vscode作为编辑器，配置hugo任务</span>
   <a href="#vscode%e4%bd%9c%e4%b8%ba%e7%bc%96%e8%be%91%e5%99%a8%e9%85%8d%e7%bd%aehugo%e4%bb%bb%e5%8a%a1" class="heading-mark">
     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
   </a>
@@ -149,6 +225,66 @@ Hello</p>]]></description>
 </span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></td></tr></table>
 </div>
 </div>]]></description>
+</item>
+<item>
+  <title>2.hugo学习-功能拓展</title>
+  <link>http://localhost:1313/CTGU-Hugo-Blog.io/posts/hugo-learn/f30d7fd/</link>
+  <pubDate>Sun, 21 Jul 2024 14:35:04 &#43;0800</pubDate>
+  <author>crack-dawn</author>
+  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/posts/hugo-learn/f30d7fd/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Typst Introduction</title>
+  <link>http://localhost:1313/CTGU-Hugo-Blog.io/posts/typst/0077ac4/</link>
+  <pubDate>Sat, 20 Jul 2024 17:08:21 &#43;0800</pubDate>
+  <author>crack-dawn</author>
+  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/posts/typst/0077ac4/</guid>
+  <description><![CDATA[<h2 id="markdown代码块测试" class="heading-element"><span>1.markdown代码块测试</span>
+  <a href="#markdown%e4%bb%a3%e7%a0%81%e5%9d%97%e6%b5%8b%e8%af%95" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="err">代码块</span></span></span></code></pre></td></tr></table>
+</div>
+</div>]]></description>
+</item>
+<item>
+  <title>1.github Action Introduction</title>
+  <link>http://localhost:1313/CTGU-Hugo-Blog.io/posts/github-action-learn/0779d18/</link>
+  <pubDate>Sat, 20 Jul 2024 16:09:10 &#43;0800</pubDate>
+  <author>crack-dawn</author>
+  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/posts/github-action-learn/0779d18/</guid>
+  <description><![CDATA[password:]]></description>
+</item>
+<item>
+  <title>hugo学习-建立项目-快速开始</title>
+  <link>http://localhost:1313/CTGU-Hugo-Blog.io/posts/hugo-learn/7f5c7db/</link>
+  <pubDate>Mon, 15 Jul 2024 23:06:23 &#43;0800</pubDate>
+  <author>crack-dawn</author>
+  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/posts/hugo-learn/7f5c7db/</guid>
+  <description><![CDATA[<p>快速建立一个 hugo项目，请参考
+<a href="https://gohugo.io/getting-started/quick-start/"target="_blank" rel="external nofollow noopener noreferrer">go Hugo quick start</a></p>]]></description>
+</item>
+<item>
+  <title>1.hugo尝试-Fixit插入视频</title>
+  <link>http://localhost:1313/CTGU-Hugo-Blog.io/posts/hugo-learn/1.hugo%E5%B0%9D%E8%AF%95-fixit%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91/</link>
+  <pubDate>Thu, 11 Jul 2024 22:10:50 &#43;0800</pubDate>
+  <author>crack-dawn</author>
+  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/posts/hugo-learn/1.hugo%E5%B0%9D%E8%AF%95-fixit%E6%8F%92%E5%85%A5%E8%A7%86%E9%A2%91/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>hugo学习-内置Shortcode</title>
+  <link>http://localhost:1313/CTGU-Hugo-Blog.io/posts/hugo-learn/hugo%E5%AD%A6%E4%B9%A0-%E5%86%85%E7%BD%AEshortcode/</link>
+  <pubDate>Fri, 24 Feb 2023 22:11:22 &#43;0800</pubDate>
+  <author>crack-dawn</author>
+  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/posts/hugo-learn/hugo%E5%AD%A6%E4%B9%A0-%E5%86%85%E7%BD%AEshortcode/</guid>
+  <description><![CDATA[<p><strong>Hugo</strong> 提供了多个内置的 Shortcodes, 以方便作者保持 Markdown 内容的整洁。</p>]]></description>
 </item>
 </channel>
 </rss>

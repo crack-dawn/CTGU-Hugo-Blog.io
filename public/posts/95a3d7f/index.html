@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en-us">
+  <head><script src="/CTGU-Hugo-Blog.io/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=CTGU-Hugo-Blog.io/livereload" data-no-instant defer></script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Git基础配置 - </title><meta name="author" content="crack-dawn">
+<meta name="author-link" content="https://github.com/crack-dawn/">
+<meta name="description" content="1.Git 基本配置
+  
+    
+  
+安装 Git,以及本地使用git bash
+
+
+下载，并在本地安装git
+从这里 https://git-scm.com/downloads ，下载安装适配的git bash版本;
+
+
+配置用户名和邮箱
+
+
+随便一个位置鼠标右键打开Git Bash命令行终端，执行下列命令，配置用户名和邮箱。
+
+
+1
+2
+
+
+git config --global user.name &#34;用户名&#34;
+git config --global user.email &#34;你的邮箱&#34;
+
+
+查看你的用户名和邮箱配置信息，确认用户名和你的邮箱都填写无误。
+可以在 Git bash 使用如下命令，
+
+
+
+1
+2
+
+
+git config --global user.name
+git config --global user.email
+
+2.与 Github 创建连接
+  
+    
+  
+
+创建链接，用于本地与Github服务端进行交互。
+不进行该操作，无法git clone 操作。
+
+如果网站部署在 Github 上的话，需要本地与 Github服务端 创建链接。
+应该进行：
+
+生成本地本机公钥文件；
+在本地打开Git Bash命令行终端，输入这行指令，创建公钥文件；
+
+
+
+1
+
+
+ssh-keygen -t rsa 
+
+将SSH key 添加到 ssh-agent
+
+
+1
+
+
+ssh-add ~/.ssh/id_rsa
+
+
+其中 ssh-keygen -t rsa  -C &quot;***@163.com&quot;
+-C 参数并不是必需的;
+-C 参数是用来添加一个注释到你的密钥中的，通常可以用来标识密钥的所有者或者用途，例如使用你的电子邮件地址作为注释。
+
+
+在Git Bash命令行终端输入这条指令查看公钥，并==复制保存公钥==。
+
+
+
+1
+
+
+cat ~/.ssh/id_rsa.pub
+
+
+也可以直接到C:\Users\你的用户名.ssh\文件夹下查看 id_rsa.pub 文件
+
+
+
+然后,在Github网页端， 添加 SSH公钥。
+登录 GitHub，点击右上角头像，进入设置，把 SSH 公钥填进去就 OK 了。
+
+
+最后，在本地打开 Git Bash，输入下面的命令,验证连接 状态。
+
+
+
+
+1
+
+
+ssh -T git@github.com
+
+3.Git clone项目
+  
+    
+  
+
+在Github上，找到需要clone的项目，点击Code按钮，复制SSH链接。
+
+
+
+1
+
+
+git clone  ssh链接
+
+
+如果clone的项目有子模块，需要使用--recurse-submodules参数。
+
+
+
+1
+
+
+git clone --recurse-submodules  ssh链接 
+
+4.参考文章
+  
+    
+  
+
+&lt;零基础学习Git&gt; -一条狗的传说
+" /><meta name="keywords" content='git' />
+  <meta itemprop="name" content="Git基础配置">
+  <meta itemprop="description" content="1.Git 基本配置安装 Git,以及本地使用git bash
+下载，并在本地安装git 从这里 https://git-scm.com/downloads ，下载安装适配的git bash版本;
+配置用户名和邮箱
+随便一个位置鼠标右键打开Git Bash命令行终端，执行下列命令，配置用户名和邮箱。
+1 2 git config --global user.name &#34;用户名&#34; git config --global user.email &#34;你的邮箱&#34; 查看你的用户名和邮箱配置信息，确认用户名和你的邮箱都填写无误。 可以在 Git bash 使用如下命令， 1 2 git config --global user.name git config --global user.email 2.与 Github 创建连接创建链接，用于本地与Github服务端进行交互。 不进行该操作，无法git clone 操作。
+如果网站部署在 Github 上的话，需要本地与 Github服务端 创建链接。 应该进行：
+生成本地本机公钥文件； 在本地打开Git Bash命令行终端，输入这行指令，创建公钥文件； 1 ssh-keygen -t rsa 将SSH key 添加到 ssh-agent
+1 ssh-add ~/.ssh/id_rsa 其中 ssh-keygen -t rsa -C &#34;***@163.com&#34; -C 参数并不是必需的; -C 参数是用来添加一个注释到你的密钥中的，通常可以用来标识密钥的所有者或者用途，例如使用你的电子邮件地址作为注释。
+在Git Bash命令行终端输入这条指令查看公钥，并==复制保存公钥==。 1 cat ~/.ssh/id_rsa.pub 也可以直接到C:\Users\你的用户名.ssh\文件夹下查看 id_rsa.pub 文件
+然后,在Github网页端， 添加 SSH公钥。 登录 GitHub，点击右上角头像，进入设置，把 SSH 公钥填进去就 OK 了。
+最后，在本地打开 Git Bash，输入下面的命令,验证连接 状态。
+1 ssh -T git@github.com 3.Git clone项目在Github上，找到需要clone的项目，点击Code按钮，复制SSH链接。 1 git clone ssh链接 如果clone的项目有子模块，需要使用--recurse-submodules参数。 1 git clone --recurse-submodules ssh链接 4.参考文章&lt;零基础学习Git&gt; -一条狗的传说 ">
+  <meta itemprop="datePublished" content="2024-08-12T11:38:27+08:00">
+  <meta itemprop="dateModified" content="2024-08-12T11:38:27+08:00">
+  <meta itemprop="wordCount" content="118">
+  <meta itemprop="keywords" content="Git"><meta property="og:url" content="http://localhost:1313/CTGU-Hugo-Blog.io/posts/95a3d7f/">
+  <meta property="og:title" content="Git基础配置">
+  <meta property="og:description" content="1.Git 基本配置安装 Git,以及本地使用git bash
+下载，并在本地安装git 从这里 https://git-scm.com/downloads ，下载安装适配的git bash版本;
+配置用户名和邮箱
+随便一个位置鼠标右键打开Git Bash命令行终端，执行下列命令，配置用户名和邮箱。
+1 2 git config --global user.name &#34;用户名&#34; git config --global user.email &#34;你的邮箱&#34; 查看你的用户名和邮箱配置信息，确认用户名和你的邮箱都填写无误。 可以在 Git bash 使用如下命令， 1 2 git config --global user.name git config --global user.email 2.与 Github 创建连接创建链接，用于本地与Github服务端进行交互。 不进行该操作，无法git clone 操作。
+如果网站部署在 Github 上的话，需要本地与 Github服务端 创建链接。 应该进行：
+生成本地本机公钥文件； 在本地打开Git Bash命令行终端，输入这行指令，创建公钥文件； 1 ssh-keygen -t rsa 将SSH key 添加到 ssh-agent
+1 ssh-add ~/.ssh/id_rsa 其中 ssh-keygen -t rsa -C &#34;***@163.com&#34; -C 参数并不是必需的; -C 参数是用来添加一个注释到你的密钥中的，通常可以用来标识密钥的所有者或者用途，例如使用你的电子邮件地址作为注释。
+在Git Bash命令行终端输入这条指令查看公钥，并==复制保存公钥==。 1 cat ~/.ssh/id_rsa.pub 也可以直接到C:\Users\你的用户名.ssh\文件夹下查看 id_rsa.pub 文件
+然后,在Github网页端， 添加 SSH公钥。 登录 GitHub，点击右上角头像，进入设置，把 SSH 公钥填进去就 OK 了。
+最后，在本地打开 Git Bash，输入下面的命令,验证连接 状态。
+1 ssh -T git@github.com 3.Git clone项目在Github上，找到需要clone的项目，点击Code按钮，复制SSH链接。 1 git clone ssh链接 如果clone的项目有子模块，需要使用--recurse-submodules参数。 1 git clone --recurse-submodules ssh链接 4.参考文章&lt;零基础学习Git&gt; -一条狗的传说 ">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-08-12T11:38:27+08:00">
+    <meta property="article:modified_time" content="2024-08-12T11:38:27+08:00">
+    <meta property="article:tag" content="Git">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Git基础配置">
+  <meta name="twitter:description" content="1.Git 基本配置安装 Git,以及本地使用git bash
+下载，并在本地安装git 从这里 https://git-scm.com/downloads ，下载安装适配的git bash版本;
+配置用户名和邮箱
+随便一个位置鼠标右键打开Git Bash命令行终端，执行下列命令，配置用户名和邮箱。
+1 2 git config --global user.name &#34;用户名&#34; git config --global user.email &#34;你的邮箱&#34; 查看你的用户名和邮箱配置信息，确认用户名和你的邮箱都填写无误。 可以在 Git bash 使用如下命令， 1 2 git config --global user.name git config --global user.email 2.与 Github 创建连接创建链接，用于本地与Github服务端进行交互。 不进行该操作，无法git clone 操作。
+如果网站部署在 Github 上的话，需要本地与 Github服务端 创建链接。 应该进行：
+生成本地本机公钥文件； 在本地打开Git Bash命令行终端，输入这行指令，创建公钥文件； 1 ssh-keygen -t rsa 将SSH key 添加到 ssh-agent
+1 ssh-add ~/.ssh/id_rsa 其中 ssh-keygen -t rsa -C &#34;***@163.com&#34; -C 参数并不是必需的; -C 参数是用来添加一个注释到你的密钥中的，通常可以用来标识密钥的所有者或者用途，例如使用你的电子邮件地址作为注释。
+在Git Bash命令行终端输入这条指令查看公钥，并==复制保存公钥==。 1 cat ~/.ssh/id_rsa.pub 也可以直接到C:\Users\你的用户名.ssh\文件夹下查看 id_rsa.pub 文件
+然后,在Github网页端， 添加 SSH公钥。 登录 GitHub，点击右上角头像，进入设置，把 SSH 公钥填进去就 OK 了。
+最后，在本地打开 Git Bash，输入下面的命令,验证连接 状态。
+1 ssh -T git@github.com 3.Git clone项目在Github上，找到需要clone的项目，点击Code按钮，复制SSH链接。 1 git clone ssh链接 如果clone的项目有子模块，需要使用--recurse-submodules参数。 1 git clone --recurse-submodules ssh链接 4.参考文章&lt;零基础学习Git&gt; -一条狗的传说 ">
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="canonical" href="http://localhost:1313/CTGU-Hugo-Blog.io/posts/95a3d7f/" /><link rel="prev" href="http://localhost:1313/CTGU-Hugo-Blog.io/posts/2982ab1/" /><link rel="next" href="http://localhost:1313/CTGU-Hugo-Blog.io/posts/2bf712f/" /><link rel="stylesheet" href="/CTGU-Hugo-Blog.io/css/style.min.css"><link rel="preload" href="/CTGU-Hugo-Blog.io/lib/fontawesome-free/all.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/CTGU-Hugo-Blog.io/lib/fontawesome-free/all.min.css"></noscript><link rel="preload" href="/CTGU-Hugo-Blog.io/lib/animate/animate.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/CTGU-Hugo-Blog.io/lib/animate/animate.min.css"></noscript><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Git基础配置",
+    "inLanguage": "en-us",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/localhost:1313\/CTGU-Hugo-Blog.io\/posts\/95a3d7f\/"
+    },"genre": "posts","keywords": "git","wordcount":  118 ,
+    "url": "http:\/\/localhost:1313\/CTGU-Hugo-Blog.io\/posts\/95a3d7f\/","datePublished": "2024-08-12T11:38:27+08:00","dateModified": "2024-08-12T11:38:27+08:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Dawn"
+      },"description": ""
+  }
+  </script></head>
+  <body data-header-desktop="sticky" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper" data-page-style="normal"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper">
+    <div class="header-title">
+      <a href="/CTGU-Hugo-Blog.io/" title=""><img loading="lazy" src="/CTGU-Hugo-Blog.io/my/hugo.svg" alt="/CTGU-Hugo-Blog.io/my/hugo.svg" data-title="/CTGU-Hugo-Blog.io/my/hugo.svg" width="26" height="26" class="logo" style="background: url(/CTGU-Hugo-Blog.io/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span class="header-title-text">A common CTGUer&#39;s blog</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/CTGU-Hugo-Blog.io/archives/"
+                
+                
+              ><i class='fa-solid fa-archive fa-fw fa-sm'></i> 所有文章</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/CTGU-Hugo-Blog.io/categories/"
+                
+                
+              ><i class='fa-solid fa-th fa-fw fa-sm'></i> 分类</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/CTGU-Hugo-Blog.io/tags/"
+                
+                
+              ><i class='fa-solid fa-tags fa-fw fa-sm'></i> 标签</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/CTGU-Hugo-Blog.io/friends/"
+                title="友情链接"
+                
+              ><i class='fa-solid fa-users fa-fw fa-sm'></i> 友链</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/CTGU-Hugo-Blog.io/course/"
+                
+                
+              ><i class='fa-solid fa-rss'></i> 专栏</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/CTGU-Hugo-Blog.io/about/"
+                
+                
+              ><i class='fa-solid fa-info-circle fa-fw fa-sm'></i> 关于</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="https://github.com/crack-dawn/CTGU-Hugo-Blog.io"
+                title="GitHub"
+                rel="noopener noreferrer" target="_blank"
+              ><i class='fa-brands fa-github fa-fw'></i> 仓库</a></li><li class="menu-item delimiter"></li><li class="menu-item theme-switch" title="切换主题">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/CTGU-Hugo-Blog.io/" title=""><img loading="lazy" src="/CTGU-Hugo-Blog.io/my/hugo.svg" alt="/CTGU-Hugo-Blog.io/my/hugo.svg" data-title="/CTGU-Hugo-Blog.io/my/hugo.svg" width="26" height="26" class="logo" style="background: url(/CTGU-Hugo-Blog.io/images/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;for(const i of ['style', 'data-title','onerror','onload']){this.removeAttribute(i);}"/><span class="header-title-text">A common CTGUer&#39;s blog</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/CTGU-Hugo-Blog.io/archives/"
+                  
+                  
+                ><i class='fa-solid fa-archive fa-fw fa-sm'></i> 所有文章</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/CTGU-Hugo-Blog.io/categories/"
+                  
+                  
+                ><i class='fa-solid fa-th fa-fw fa-sm'></i> 分类</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/CTGU-Hugo-Blog.io/tags/"
+                  
+                  
+                ><i class='fa-solid fa-tags fa-fw fa-sm'></i> 标签</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/CTGU-Hugo-Blog.io/friends/"
+                  title="友情链接"
+                  
+                ><i class='fa-solid fa-users fa-fw fa-sm'></i> 友链</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/CTGU-Hugo-Blog.io/course/"
+                  
+                  
+                ><i class='fa-solid fa-rss'></i> 专栏</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/CTGU-Hugo-Blog.io/about/"
+                  
+                  
+                ><i class='fa-solid fa-info-circle fa-fw fa-sm'></i> 关于</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="https://github.com/crack-dawn/CTGU-Hugo-Blog.io"
+                  title="GitHub"
+                  rel="noopener noreferrer" target="_blank"
+                ><i class='fa-brands fa-github fa-fw'></i> 仓库</a></li><li class="menu-item menu-system">
+          <span class="menu-system-item theme-switch" title="切换主题"><i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i></span></li>
+      </ul>
+    </nav>
+  </div>
+</header><main class="container"><aside class="aside-collection animate__animated animate__fadeIn animate__faster" aria-label="合集"></aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span title="转载" class="icon-repost"><i class="fa-solid fa-share fa-fw" aria-hidden="true"></i></span><span>Git基础配置</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      Dawn</span></span><span class="post-included-in">&nbsp;收录于 <a href="/CTGU-Hugo-Blog.io/categories/git-basic/" class="post-category" title="分类 - Git-Basic"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Git-Basic</a></span></div><div class="post-meta-line"><span title="发布于 2024-08-12 11:38:27"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2024-08-12">2024-08-12</time></span>&nbsp;<span title="118 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 200 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 1 分钟</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Git基础配置">
+              <i class="fa-regular fa-eye fa-fw me-1" aria-hidden="true"></i><span id="busuanzi_value_page_pv">-</span>&nbsp;次阅读
+            </span>&nbsp;<span class="comment-count" data-flag-title="Git基础配置">
+              <i class="fa-regular fa-comments fa-fw me-1" aria-hidden="true"></i><span data-path="/CTGU-Hugo-Blog.io/posts/95a3d7f/" class="waline-comment-count">-</span>&nbsp;条评论
+            </span>&nbsp;</div>
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>目录</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#git-基本配置">Git 基本配置</a></li>
+    <li><a href="#与-github-创建连接">与 Github 创建连接</a></li>
+    <li><a href="#git-clone项目">Git clone项目</a></li>
+    <li><a href="#参考文章">参考文章</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><h2 id="git-基本配置" class="heading-element"><span>1.Git 基本配置</span>
+  <a href="#git-%e5%9f%ba%e6%9c%ac%e9%85%8d%e7%bd%ae" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><p>安装 <code>Git</code>,以及本地使用<code>git bash</code></p>
+<ol>
+<li>
+<p>下载，并在本地安装git
+从这里 <a href="https://git-scm.com/downloads"target="_blank" rel="external nofollow noopener noreferrer">https://git-scm.com/downloads</a> ，下载安装适配的git bash版本;</p>
+</li>
+<li>
+<p>配置用户名和邮箱</p>
+</li>
+</ol>
+<p>随便一个位置鼠标右键打开<code>Git Bash命令行终端</code>，执行下列命令，配置用户名和邮箱。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git config --global user.name <span class="s2">&#34;用户名&#34;</span>
+</span></span><span class="line"><span class="cl">git config --global user.email <span class="s2">&#34;你的邮箱&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>查看你的用户名和邮箱配置信息，确认<code>用户名</code>和<code>你的邮箱</code>都填写无误。
+可以在 Git bash 使用如下命令，</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git config --global user.name
+</span></span><span class="line"><span class="cl">git config --global user.email</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="与-github-创建连接" class="heading-element"><span>2.与 Github 创建连接</span>
+  <a href="#%e4%b8%8e-github-%e5%88%9b%e5%bb%ba%e8%bf%9e%e6%8e%a5" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><blockquote>
+<p>创建链接，用于本地与Github服务端进行交互。
+不进行该操作，无法git clone 操作。</p>
+</blockquote>
+<p>如果网站部署在 Github 上的话，需要本地与 Github服务端 创建链接。
+应该进行：</p>
+<ol>
+<li>生成本地本机公钥文件；
+在本地打开<code>Git Bash命令行终端</code>，输入这行指令，创建公钥文件；</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-BASH" data-lang="BASH"><span class="line"><span class="cl">ssh-keygen -t rsa </span></span></code></pre></td></tr></table>
+</div>
+</div><p>将SSH key 添加到 ssh-agent</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-BASH" data-lang="BASH"><span class="line"><span class="cl">ssh-add ~/.ssh/id_rsa</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>其中 <code>ssh-keygen -t rsa  -C &quot;***@163.com&quot;</code>
+-C 参数并不是必需的;
+-C 参数是用来添加一个<code>注释</code>到你的密钥中的，通常可以用来标识密钥的所有者或者用途，例如使用<code>你的电子邮件地址</code>作为注释。</p>
+</blockquote>
+<ol start="2">
+<li>在<code>Git Bash命令行终端</code>输入这条指令查看<code>公钥</code>，并==复制保存<code>公钥</code>==。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-BASH" data-lang="BASH"><span class="line"><span class="cl">cat ~/.ssh/id_rsa.pub</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>也可以直接到C:\Users\你的用户名.ssh\文件夹下查看 id_rsa.pub 文件</p>
+</blockquote>
+<ol start="3">
+<li>
+<p>然后,在Github网页端， 添加 <code>SSH公钥</code>。
+登录 GitHub，点击右上角头像，进入设置，把 SSH 公钥填进去就 OK 了。</p>
+</li>
+<li>
+<p>最后，在本地打开 Git Bash，输入下面的命令,验证连接 状态。</p>
+</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-BASH" data-lang="BASH"><span class="line"><span class="cl">ssh -T git@github.com</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="git-clone项目" class="heading-element"><span>3.Git clone项目</span>
+  <a href="#git-clone%e9%a1%b9%e7%9b%ae" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><ol>
+<li>在Github上，找到需要clone的项目，点击<code>Code</code>按钮，复制<code>SSH</code>链接。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-BASH" data-lang="BASH"><span class="line"><span class="cl">git clone  ssh链接</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>如果clone的项目有子模块，需要使用<code>--recurse-submodules</code>参数。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-BASH" data-lang="BASH"><span class="line"><span class="cl">git clone --recurse-submodules  ssh链接 </span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="参考文章" class="heading-element"><span>4.参考文章</span>
+  <a href="#%e5%8f%82%e8%80%83%e6%96%87%e7%ab%a0" class="heading-mark">
+    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
+  </a>
+</h2><ul>
+<li><a href="https://www.cnblogs.com/legenddog/p/17632687.html"target="_blank" rel="external nofollow noopener noreferrer">&lt;零基础学习Git&gt; -一条狗的传说</a></li>
+</ul></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title="更新于 2024-08-12 11:38:27">更新于 2024-08-12&nbsp;</span>
+      </div></div><div class="post-info-line">
+        <div class="post-info-md"><span><a href="/CTGU-Hugo-Blog.io/posts/95a3d7f/index.md" title="阅读原始文档" class="link-to-markdown">阅读原始文档</a></span><span><a href="https://github.com/crack-dawn/CTGU-Hugo-Blog.io/blob/master/content/posts%5cgit%e5%9f%ba%e7%a1%80%e9%85%8d%e7%bd%ae.md?plain=1" title="查看源码"target="_blank" rel="external nofollow noopener noreferrer" class="link-to-source">查看源码</a></span><span><a href="https://github.com/crack-dawn/CTGU-Hugo-Blog.io/edit/master/content/posts%5cgit%e5%9f%ba%e7%a1%80%e9%85%8d%e7%bd%ae.md" title="编辑此页"target="_blank" rel="external nofollow noopener noreferrer" class="link-to-edit">编辑此页</a></span><span><a href="https://github.com/crack-dawn/CTGU-Hugo-Blog.io/issues/new?title=[BUG]%20Git%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE&amp;body=%7cField%7cValue%7c%0A%7c-%7c-%7c%0A%7cTitle%7cGit%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE%7c%0A%7cURL%7chttp://localhost:1313/CTGU-Hugo-Blog.io/posts/95a3d7f/%7c%0A%7cFilename%7chttps://github.com/crack-dawn/CTGU-Hugo-Blog.io/blob/master/content/posts%5cgit%e5%9f%ba%e7%a1%80%e9%85%8d%e7%bd%ae.md?plain=1%7c" title="报告问题"target="_blank" rel="external nofollow noopener noreferrer" class="link-to-report">报告问题</a></span></div>
+        <div class="post-info-share">
+          <span><a href="javascript:void(0);" title="分享到 X" data-sharer="twitter" data-url="http://localhost:1313/CTGU-Hugo-Blog.io/posts/95a3d7f/" data-title="Git基础配置" data-hashtags="git"><i class="fa-brands fa-x-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://localhost:1313/CTGU-Hugo-Blog.io/posts/95a3d7f/" data-hashtag="git"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://localhost:1313/CTGU-Hugo-Blog.io/posts/95a3d7f/" data-title="Git基础配置"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Myspace" data-sharer="myspace" data-url="http://localhost:1313/CTGU-Hugo-Blog.io/posts/95a3d7f/" data-title="Git基础配置" data-description=""><i data-svg-src="/CTGU-Hugo-Blog.io/lib/simple-icons/icons/myspace.min.svg" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 Blogger" data-sharer="blogger" data-url="http://localhost:1313/CTGU-Hugo-Blog.io/posts/95a3d7f/" data-title="Git基础配置" data-description=""><i class="fa-brands fa-blogger fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="分享到 百度" data-sharer="baidu" data-url="http://localhost:1313/CTGU-Hugo-Blog.io/posts/95a3d7f/" data-title="Git基础配置"><i data-svg-src="/CTGU-Hugo-Blog.io/lib/simple-icons/icons/baidu.min.svg" aria-hidden="true"></i></a>
+  </span>
+        </div>
+      </div></div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href="/CTGU-Hugo-Blog.io/tags/git/" class="post-tag" title="标签 - Git">Git</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/CTGU-Hugo-Blog.io/">主页</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/CTGU-Hugo-Blog.io/posts/2982ab1/" class="post-nav-item" rel="prev" title="你好"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>你好</a>
+      <a href="/CTGU-Hugo-Blog.io/posts/2bf712f/" class="post-nav-item" rel="next" title="Vscode Auto Task">Vscode Auto Task<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="waline" class="comment"></div><noscript>
+        Please enable JavaScript to view the comments powered by <a href="https://waline.js.org/" rel="external nofollow noopener noreferrer">Waline</a>.
+      </noscript></div></article>
+
+  <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.128.2"><img class="hugo-icon" src="/CTGU-Hugo-Blog.io/images/hugo.min.svg" alt="Hugo logo" /> Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.3.8"><img class="fixit-icon" src="/CTGU-Hugo-Blog.io/images/fixit.min.svg" alt="FixIt logo" /> FixIt</a>
+        </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">
+              <a href="https://github.com/crack-dawn/"target="_blank" rel="external nofollow noopener noreferrer">crack-dawn</a></span></div><div class="footer-line visitor">
+          <span id="busuanzi_container_site_uv" title='总访客数'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='总访问量'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
+        </div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="回到顶部"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>
+        </div><div class="fixed-button view-comments d-none" role="button" aria-label="查看评论"><i class="fa-solid fa-comment fa-fw" aria-hidden="true"></i></div></div><div id="mask"></div><div class="reading-progress-bar" style="left: 0;bottom: 0;width: calc(100% - var(--progress));"></div><noscript>
+    <div class="noscript-warning">该网站在启用 JavaScript 的情况下效果最佳。</div>
+  </noscript>
+</div><link rel="stylesheet" href="/CTGU-Hugo-Blog.io/lib/waline/waline.css"><link rel="stylesheet" href="/CTGU-Hugo-Blog.io/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="preload" href="/CTGU-Hugo-Blog.io/lib/katex/katex.min.css" as="style" onload="this.removeAttribute('onload');this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/CTGU-Hugo-Blog.io/lib/katex/katex.min.css"></noscript><link rel="stylesheet" href="/CTGU-Hugo-Blog.io/lib/cookieconsent/cookieconsent.min.css"><link rel="stylesheet" href="/CTGU-Hugo-Blog.io/lib/pace/themes/blue/pace-theme-minimal.css"><script src="/CTGU-Hugo-Blog.io/lib/waline/waline.js" defer></script><script src="/CTGU-Hugo-Blog.io/lib/twemoji/twemoji.min.js" defer></script><script src="/CTGU-Hugo-Blog.io/lib/lightgallery/lightgallery.min.js" defer></script><script src="/CTGU-Hugo-Blog.io/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js" defer></script><script src="/CTGU-Hugo-Blog.io/lib/lightgallery/plugins/zoom/lg-zoom.min.js" defer></script><script src="/CTGU-Hugo-Blog.io/lib/sharer/sharer.min.js" async defer></script><script src="/CTGU-Hugo-Blog.io/lib/katex/katex.min.js" defer></script><script src="/CTGU-Hugo-Blog.io/lib/katex/auto-render.min.js" defer></script><script src="/CTGU-Hugo-Blog.io/lib/katex/mhchem.min.js" defer></script><script src="/CTGU-Hugo-Blog.io/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="/CTGU-Hugo-Blog.io/lib/cell-watermark/watermark.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script src="/CTGU-Hugo-Blog.io/lib/pace/pace.min.js" async defer></script><script>window.config={"code":{"copyTitle":"复制到剪贴板","editLockTitle":"锁定可编辑代码块","editUnLockTitle":"解锁可编辑代码块","editable":true,"maxShownLines":15},"comment":{"enable":true,"expired":false,"waline":{"comment":true,"copyright":true,"dark":"body[data-theme='dark']","el":"#waline","emoji":["https://unpkg.com/@waline/emojis@1.1.0/bmoji","https://unpkg.com/@waline/emojis@1.1.0/qq","https://unpkg.com/@waline/emojis@1.1.0/alus","//unpkg.com/@waline/emojis@1.1.0/weibo"],"highlighter":true,"imageUploader":true,"lang":"zh-cn","login":"disable","meta":["nick","mail","link"],"pageSize":10,"requiredMeta":["mail"],"search":false,"serverURL":"https://walinecomment-crack-dawns-projects.vercel.app/","texRenderer":true}},"cookieconsent":{"content":{"dismiss":"同意","link":"了解更多","message":"本网站使用 Cookies 来改善您的浏览体验。"},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"twemoji":true,"version":"v0.3.8","watermark":{"appendto":".wrapper\u003emain","colspacing":30,"content":"皂荚","enable":true,"fontfamily":"inherit","fontsize":0.85,"height":20,"opacity":0.1,"rotate":15,"rowspacing":60,"width":150}};</script><script src="/CTGU-Hugo-Blog.io/js/theme.min.js" defer></script></body>
+</html>

@@ -1,13 +1,16 @@
 # Hugo仓库维护与博客更新
 
+## 如何hugo建站可以参考：
+1. https://www.cnblogs.com/legenddog/p/17632687.html
+2. 
 
 ## 从github拉取hugo博客仓库，本地部署
 
 ### 配置本地hugo环境
 1. 安装hugo
-```
 
-```
+参考地址：https://gohugo.io/installation/
+
 
 
 ### 拉取仓库到本地
@@ -15,7 +18,7 @@
 ```bash
 git clone --recurse-submodules https://github.com/crack-dawn/CTGU-Hugo-Blog.io.git
 ``` 
-忘记拉取子模块了
+忘记拉取子模块，可以进行
 ```bash
 cd CTGU-Hugo-Blog.io
 git submodule init
@@ -25,7 +28,7 @@ git submodule update --recursive
 
 ### vscode作为编辑器，配置hugo任务
 ```json
-//https://code.visualstudio.com/docs/editor/tasks-appendix
+// https://code.visualstudio.com/docs/editor/tasks-appendix
 {
     &#34;version&#34;: &#34;2.0.0&#34;,
     &#34;tasks&#34;: [
