@@ -75,6 +75,19 @@ git submodule update --recursive
 // https://code.visualstudio.com/docs/editor/tasks-appendix
 {
     "version": "2.0.0",
+    "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "new",
+        "showReuseMessage": true,
+        "clear": true
+    },
+    "options": {
+        "cwd": "${workspaceFolder}",//默认进入到 hugo项目根目录
+    },
+    "problemMatcher": [],
+
     "tasks": [
         {//
             "type": "shell",
@@ -104,6 +117,11 @@ git submodule update --recursive
             "type": "shell",
             "command":"hugo new ./content/posts/${input:newFileName}"
         },
+        {
+            "label": "3.open Document folder(打开./content/posts文件夹)",
+            "type": "shell",
+            "command": "code --goto ${workspaceFolder}/content/posts",
+        }
     ],
 
     "inputs": [
@@ -115,6 +133,7 @@ git submodule update --recursive
         }
     ],
 }
+
 ```
 
 

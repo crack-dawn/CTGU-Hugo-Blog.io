@@ -4,12 +4,12 @@
         "echo": true,
         "reveal": "always",
         "focus": false,
-        "panel": "new",
+        "panel": "dedicated",
         "showReuseMessage": true,
         "clear": true
     },
     "options": {
-        "cwd": "${workspaceFolder}",//默认进入到 hugo项目根目录
+        "cwd": "${workspaceFolder}/../../",
     },
     "problemMatcher": [],
 
@@ -42,11 +42,6 @@
             "type": "shell",
             "command":"hugo new ./content/posts/${input:newFileName}"
         },
-        {
-            "label": "3.open Document folder(打开./content/posts文件夹)",
-            "type": "shell",
-            "command": "code --goto ${workspaceFolder}/content/posts",
-        }
     ],
 
     "inputs": [
