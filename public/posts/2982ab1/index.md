@@ -1,7 +1,6 @@
 # 你好
 
-你好
-Hello
+你好 Hello
 &lt;!--more--&gt;
 
 ---

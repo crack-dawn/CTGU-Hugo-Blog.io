@@ -58,7 +58,7 @@
 
   # FixIt 0.2.14 | 新增 在左上角或者右上角显示 GitHub 开源链接
 [githubCorner] # 在左上角或者右上角显示 GitHub 开源链接
-    enable = false
+    enable = true
     permalink = "https://github.com/crack-dawn/CTGU-Hugo-Blog.io"
     title = "在 GitHub 上查看源代码"
     position = "left" # ["left", "right"]
@@ -92,7 +92,7 @@
     gravatarEmail = "" # Gravatar 邮箱，用于优先在主页显示的头像
     avatarURL = "./my/hugo.svg" # 主页显示头像的 URL
     title = "显而不易见" # 主页显示的网站标题 (支持 HTML 格式)
-    subtitle = "追求星辰大海,还是沉湎虚拟现实?" # 主页显示的网站副标题
+    subtitle = "同频共振" # 主页显示的网站副标题
     typeit = true # 是否为副标题显示打字机动画
     social = true # 是否显示社交账号
     disclaimer = "" # 免责声明 (支持 HTML 格式)
@@ -101,6 +101,7 @@
     paginate = 10 # 主页每页显示文章数量
 # 作者的社交信息设置
   [social]
+    RSS = false
     GitHub = true
     Bilibili = true
     QQ = true
@@ -191,11 +192,11 @@
     # FixIt 0.3.0 | 新增 页面标题配置
     [page.heading]
       # FixIt 0.3.6 | 新增 是否自动大写标题
-      capitalize = false
+      capitalize = true
       # 配合 `markup.tableOfContents.ordered` 参数使用
       [page.heading.number]
         # 是否启用自动标题编号
-        enable = true
+        enable = false
         [page.heading.number.format]
           h1 = "{title}"
           h2 = "{h2}.{title}"
@@ -266,6 +267,7 @@
     # 文章页面的分享信息设置
     [page.share]
       enable = true
+      Baidu = true
       Twitter = true
       Facebook = true
       Weibo = true
@@ -282,9 +284,8 @@
       Pocket = false
       Flipboard = false
       Linkedin = false
-      Myspace = true
-      Blogger = true
-      Baidu = true
+      Myspace = false
+      Blogger = false
       Odnoklassniki = false
       Evernote = false
       Skype = false

@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Rust - 标签 - </title>
+    <link>http://localhost:1313/CTGU-Hugo-Blog.io/tags/rust/</link>
+    <description>Rust - 标签 | </description>
+    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 17 Aug 2024 22:05:52 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/CTGU-Hugo-Blog.io/tags/rust/" rel="self" type="application/rss+xml" /><item>
+  <title>rust安装使用</title>
+  <link>http://localhost:1313/CTGU-Hugo-Blog.io/posts/rust/ca1d32f/</link>
+  <pubDate>Sat, 17 Aug 2024 22:05:52 &#43;0800</pubDate>
+  <author>crack-dawn</author>
+  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/posts/rust/ca1d32f/</guid>
+  <description><![CDATA[在windows下安装rust。]]></description>
+</item>
+</channel>
+</rss>

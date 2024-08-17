@@ -1,6 +1,6 @@
 # Vscode Auto Task
 
-
+## [vsocde task Documents](https://code.visualstudio.com/Docs/editor/tasks)
 &lt;!--more--&gt;
 
 ---

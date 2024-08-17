@@ -2,18 +2,24 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   ><url>
-      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/</loc><lastmod>2024-08-12T13:01:12&#43;08:00</lastmod></url><url>
-      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/categories/</loc><lastmod>2024-08-12T13:01:12&#43;08:00</lastmod></url><url>
-      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/tags/draft/</loc><lastmod>2024-08-12T13:01:12&#43;08:00</lastmod></url><url>
-      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/categories/draft/</loc><lastmod>2024-08-12T13:01:12&#43;08:00</lastmod></url><url>
-      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/</loc><lastmod>2024-08-12T13:01:12&#43;08:00</lastmod></url><url>
-      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/tags/</loc><lastmod>2024-08-12T13:01:12&#43;08:00</lastmod></url><url>
-      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/2bf712f/</loc><lastmod>2024-08-12T13:01:12&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/</loc><lastmod>2024-08-17T22:05:52&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/categories/</loc><lastmod>2024-08-17T22:05:52&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/</loc><lastmod>2024-08-17T22:05:52&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/tags/rust/</loc><lastmod>2024-08-17T22:05:52&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/categories/rust/</loc><lastmod>2024-08-17T22:05:52&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/rust/ca1d32f/</loc><lastmod>2024-08-17T22:05:52&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/tags/</loc><lastmod>2024-08-17T22:05:52&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/4d19e60/</loc><lastmod>2024-08-13T23:17:28&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/categories/stable-diffusion/</loc><lastmod>2024-08-13T23:17:28&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/tags/stable-diffusion-webui/</loc><lastmod>2024-08-13T23:17:28&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/tags/draft/</loc><lastmod>2024-08-13T23:17:28&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/categories/draft/</loc><lastmod>2024-08-13T23:17:28&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/2bf712f/</loc><lastmod>2024-08-13T23:17:28&#43;08:00</lastmod></url><url>
       <loc>http://localhost:1313/CTGU-Hugo-Blog.io/tags/git/</loc><lastmod>2024-08-12T13:01:12&#43;08:00</lastmod></url><url>
       <loc>http://localhost:1313/CTGU-Hugo-Blog.io/categories/git-basic/</loc><lastmod>2024-08-12T13:01:12&#43;08:00</lastmod></url><url>
       <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/95a3d7f/</loc><lastmod>2024-08-12T13:01:12&#43;08:00</lastmod></url><url>
-      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/2982ab1/</loc><lastmod>2024-08-11T23:24:10&#43;08:00</lastmod></url><url>
-      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/a116deb/</loc><lastmod>2024-08-12T13:01:12&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/2982ab1/</loc><lastmod>2024-08-13T23:17:28&#43;08:00</lastmod></url><url>
+      <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/a116deb/</loc><lastmod>2024-08-13T23:17:28&#43;08:00</lastmod></url><url>
       <loc>http://localhost:1313/CTGU-Hugo-Blog.io/friends/</loc><lastmod>2024-07-22T23:00:53&#43;08:00</lastmod></url><url>
       <loc>http://localhost:1313/CTGU-Hugo-Blog.io/posts/hugo-learn/f30d7fd/</loc><lastmod>2024-07-22T23:07:28&#43;08:00</lastmod></url><url>
       <loc>http://localhost:1313/CTGU-Hugo-Blog.io/categories/hugo%E5%AD%A6%E4%B9%A0/</loc><lastmod>2024-07-22T23:07:28&#43;08:00</lastmod></url><url>
