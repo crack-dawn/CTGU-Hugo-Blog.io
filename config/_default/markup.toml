@@ -1,0 +1,55 @@
+# -------------------------------------------------------------------------------------
+# Markup related configuration in Hugo
+# See: https://gohugo.io/getting-started/configuration-markup/
+# -------------------------------------------------------------------------------------
+# Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+
+########## necessary configurations ##########
+[highlight]
+
+  # https://github.com/Lruihao/FixIt/issues/43
+  codeFences = true
+  lineNos = true
+  lineNumbersInTable = true
+  noClasses = false
+  guessSyntax = true
+
+[goldmark] # 默认 FixIt 的配置 最好啥都不写，不然莫名报错
+# ERROR error calling resources.GetRemote: Get "https://publish.twitter.com/oembed?dnt=true&url=https%3A%2F%2Ftwitter.com%2FSanDiegoZoo%2Fstatus%2F1453110110599868418": dial tcp 199.96.63.75:443: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+# Built in 22483 ms
+# Error: error building site: logged 1 error(s)
+    # _merge = "shallow"
+
+########## necessary configurations ##########
+
+
+
+# # 容易出错，不理解的报错
+# # Goldmark is from Hugo 0.60 the default library used for Markdown
+# [goldmark]
+#   [goldmark.extensions]
+#     definitionList = true
+#     footnote = true
+#     linkify = true
+#     strikethrough = true
+#     table = true
+#     taskList = true
+#     typographer = true
+#   [goldmark.parser]
+#     autoHeadingID = true
+#     autoHeadingIDType = "github"
+#     wrapStandAloneImageWithinParagraph = true
+#     [goldmark.parser.attribute]
+#       block = true
+#       title = true
+#   [goldmark.renderer]
+#     # By default, Goldmark ignores newlines within a paragraph. Set to true to render newlines as <br> elements.
+#     hardWraps = false
+#     # whether to use HTML tags directly in the document
+#     unsafe = true
+
+# Table Of Contents settings
+[tableOfContents]
+  ordered = true
+  startLevel = 2
+  endLevel = 7

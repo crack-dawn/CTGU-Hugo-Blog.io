@@ -1,3 +1,80 @@
+# -------------------------------------------------------------------------------------
+# Theme Core Configuration
+# See: https://fixit.lruihao.cn/theme-documentation-basics/#site-configuration
+# -------------------------------------------------------------------------------------
+# FixIt theme version
+version = "0.3.X"
+# site description
+description = "Hugo FixIt的作者，喜欢瞎折腾、造轮子、写东西，分享一些前端开发中的所见、所闻、所思。"
+# site keywords
+keywords = ["李瑞豪", "李瑞豪的博客", "菠菜眾長", "博採眾長", "Lruihao", "Cell", "Hugo FixIt"]
+# site default theme ("light", "dark", "auto")
+defaultTheme = "auto"
+# date format
+dateFormat = "2006-01-02"
+# website images for Open Graph and Twitter Cards
+images = ["/images/apple-devices-preview.webp"]
+# FixIt 0.2.12 | NEW enable PWA
+enablePWA = true
+# FixIt 0.2.14 | NEW whether to add external Icon for external links automatically
+externalIcon = true
+# FixIt 0.3.0 | NEW whether to add site title to the title of every page
+# remember to set up your site title in `hugo.toml` (e.g. title = "title")
+withSiteTitle = true
+# FixIt 0.3.0 | NEW title delimiter when the site title is be added to the title of every page
+titleDelimiter = "|"
+# FixIt 0.3.0 | NEW whether to add site subtitle to the title of index page
+# remember to set up your site subtitle by `params.header.subtitle.name`
+indexWithSubtitle = true
+# FixIt 0.2.14 | NEW FixIt will, by default, inject a theme meta tag in the HTML head on the home page only.
+# You can turn it off, but we would really appreciate if you don’t, as this is a good way to watch FixIt's popularity on the rise.
+disableThemeInject = false
+
+[author]
+    name = "crack-dawn"
+    email = ""
+    link = "https://github.com/crack-dawn/"
+    avatar = "" # FixIt 0.2.18 | 新增
+
+# App icon config
+[app]
+  # optional site title override for the app when added to an iOS home screen or Android launcher
+  title = "同频共振"
+  # whether to omit favicon resource links
+  noFavicon = false
+  # modern SVG favicon to use in place of older style .png and .ico files
+  svgFavicon = ""
+  # Safari mask icon color
+  iconColor = "#5bbad5"
+  # Windows v8-10 tile color
+  tileColor = "#da532c"
+  # FixIt 0.2.12 | CHANGED Android browser theme color
+  [app.themeColor]
+    light = "#ffffff"
+    dark = "#252627"
+
+# Search config
+[search]
+  enable = true
+  # type of search engine ("lunr", "algolia")
+  type = "lunr"
+  # max index length of the chunked content
+  contentLength = 4000
+  # placeholder of the search bar
+  placeholder = ""
+  # max number of results length
+  maxResultLength = 10
+  # snippet length of the result
+  snippetLength = 50
+  # HTML tag name of the highlight part in results
+  highlightTag = "em"
+  # whether to use the absolute URL based on the baseURL in search index
+  absoluteURL = false
+#   [search.algolia]
+#     index = "index"
+#     appID = "MTJNHU0JVB"
+#     searchKey = "5486225134d99f43826da401ee9bad57"
+
 [ibruce]
      enable = true
      enablePost = true
@@ -8,65 +85,6 @@
     dir = "content"
     issueTpl = "title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0A|URL|{URL}|%0A|Filename|{sourceURL}|"
 
-[backToTop]
-    enable = true
-    scrollpercent = true
-
-[readingProgress] # 全局页面 阅读进度条配置
-    enable = true
-    start = "left"      # 可用值：["left", "right"]
-    position = "bottom"    # 可用值：["top", "bottom"]
-    reversed = true
-    light = ""
-    dark = ""
-    height = "2px"
-    
-[pace] # 页面加载期间顶部的进度条 # 有关详细信息：https://github.com/CodeByZach/pace
-    enable = true
-    color = "blue" # 所有可用颜色：# ["black", "blue", "green", "orange", "pink", "purple", "red", "silver", "white", "yellow"]
-    theme = "minimal" # 所有可用主题：# ["barber-shop", "big-counter", "bounce", "center-atom", "center-circle", "center-radar", "center-simple","corner-indicator", "fill-left", "flash", "flat-top", "loading-bar", "mac-osx", "material", "minimal"]
-    
-[watermark] # 水印配置
-    enable = true
-    # 水印内容（允许 HTML 格式）
-    content = "皂荚"
-    # 水印透明度
-    opacity = 0.1
-    # 水印父节点
-    appendTo = ".wrapper>main"
-    # 单水印宽度 单位：px
-    width = 150
-    # 单水印高度 单位：px
-    height = 20
-    # 水印行间距 单位：px
-    rowSpacing = 60
-    # 水印列间距 单位：px
-    colSpacing = 30
-    # 水印旋转角度 单位：deg
-    rotate = 15
-    # 水印字体大小，单位：rem
-    fontSize = 0.85
-    # FixIt 0.2.13 | 新增 水印字体
-    fontFamily = "inherit"
-    
-# FixIt 0.2.8 | 新增 兼容性设置
-[compatibility] # 兼容性配置
-    # 是否使用 Polyfill.io 来兼容旧式浏览器
-    polyfill = false
-    # 是否使用 object-fit-images 来兼容旧式浏览器
-    objectFit = false
-
-  # FixIt 0.2.14 | 新增 在左上角或者右上角显示 GitHub 开源链接
-[githubCorner] # 在左上角或者右上角显示 GitHub 开源链接
-    enable = true
-    permalink = "https://github.com/crack-dawn/CTGU-Hugo-Blog.io"
-    title = "在 GitHub 上查看源代码"
-    position = "left" # ["left", "right"]
-[author]
-    name = "crack-dawn"
-    email = ""
-    link = "https://github.com/crack-dawn/"
-    avatar = "" # FixIt 0.2.18 | 新增
 # 网站地图配置
 [sitemap]
   changefreq = "weekly"
@@ -82,7 +100,97 @@
 # FixIt 0.2.0 | NEW Header title config
   [header.title]
     logo = "./my/hugo.svg" # URL of the LOGO
-    name = "A common CTGUer's blog" # title name
+    name = "A common blog" # title name
+
+# FixIt 0.2.18 | NEW Breadcrumb config
+[breadcrumb]
+  enable = true
+  sticky = true
+  showHome = false
+
+# FixIt 0.3.10 | NEW Post navigation config
+[navigation]
+  # whether to show the post navigation in section pages scope
+  inSection = false
+  # whether to reverse the next/previous post navigation order
+  reverse = false
+
+# Footer config
+[footer]
+  enable = true
+  # FixIt 0.2.17 | CHANGED Custom content (HTML format is supported)
+  # whether to show copyright info
+  copyright = true
+  # whether to show the author
+  author = true
+  # Site creation year
+  since = 2018
+  # FixIt 0.2.12 | NEW Public network security only in China (HTML format is supported)
+  gov = ""
+  # ICP info only in China (HTML format is supported)
+  icp = ""
+  # license info (HTML format is supported)
+  license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
+  # FixIt 0.3.0 | NEW whether to show Hugo and theme info
+  [footer.powered]
+    enable = true
+    hugoLogo = true
+    themeLogo = true
+  # FixIt 0.2.17 | CHANGED Site creation time
+  [footer.siteTime]
+    enable = true
+    animate = true
+    icon = "fa-solid fa-heartbeat"
+    pre = "博客已运行"
+    value = "2018-05-28T20:01:01+08:00"
+  # FixIt 0.2.17 | NEW footer lines order, optional values: ["first", 0, 1, 2, 3, 4, 5, "last"]
+  [footer.order]
+    powered = 1
+    copyright = 2
+    statistics = 3
+    visitor = 4
+    beian = 5
+
+# Section (all posts) page config
+[section]
+  # special amount of posts in each section page
+  paginate = 20
+  # date format (month and day)
+  dateFormat = "01-02"
+  # FixIt 0.3.10 | NEW Section feed config for RSS, Atom and JSON feed.
+  [section.feed]
+    # The number of posts to include in the feed. Default is -1, which means all posts.
+    limit = -1
+    # whether to show the full text content in feed.
+    fullText = false
+  # FixIt 0.2.13 | NEW recently updated posts settings
+  [section.recentlyUpdated]
+    enable = true
+    rss = true
+    days = 30
+    maxCount = 10
+
+# List (category or tag) page config
+[list]
+  # special amount of posts in each list page
+  paginate = 12
+  # date format (month and day)
+  dateFormat = "01-02"
+  # FixIt 0.3.10 | NEW Term list feed config for RSS, Atom and JSON feed.
+  [list.feed]
+    # The number of posts to include in the feed. Default is -1, which means all posts.
+    limit = -1
+    # whether to show the full text content in feed.
+    fullText = false
+
+# FixIt 0.2.17 | NEW TagCloud config for tags page
+[tagcloud]
+  enable = true
+  min = 14 # Minimum font size in px
+  max = 32 # Maximum font size in px
+  peakCount = 10 # Maximum count of posts per tag
+  orderby = "name" # Order of tags, optional values: ["name", "count"]
+
 
 # 主页信息设置
 [home]
@@ -99,6 +207,7 @@
   [home.posts]# 主页文章列表
     enable = true
     paginate = 10 # 主页每页显示文章数量
+
 # 作者的社交信息设置
   [social]
     RSS = false
@@ -123,10 +232,10 @@
     # FixIt 0.3.0 | 新增 是否在相关文章中隐藏一篇文章
     hiddenFromRelated = false
     # 是否使用 twemoji
-    twemoji = true
+    twemoji = false
     # 是否使用 lightgallery
     # FixIt 0.2.18 | 更改 如果设为 "force"，文章中的图片将强制按照画廊形式呈现
-    lightgallery = false
+    lightgallery = "force"
     # 是否使用 ruby 扩展语法
     ruby = true
     # 是否使用 fraction 扩展语法
@@ -135,32 +244,29 @@
     fontawesome = true
     # 许可协议信息（支持 HTML 格式）
     license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
-    
     # 是否显示原始 Markdown 文档内容的链接
     linkToMarkdown = true
     # FixIt 0.3.0 | 新增 是否显示查看文章源码的链接
     linkToSource = true
-
     # # FixIt 0.3.0 | 新增 是否显示编辑文章的链接
-    # linkToEdit = false
+    linkToEdit = true
     # # FixIt 0.3.0 | 新增 是否显示报告文章问题的链接
-    # linkToReport = false
-
+    linkToReport = true
     # 是否在 RSS 中显示全文内容
     rssFullText = false
     # FixIt 0.2.13 | 新增 页面样式 ["narrow", "normal", "wide", ...]
-    pageStyle = "normal"
+    pageStyle = "wide"
     # FixIt 0.2.17 | 更改 开启自动书签支持
     # 如果为 true，则在关闭页面时保存阅读进度
-    autoBookmark = false
+    autoBookmark = true
     # FixIt 0.2.17 | 新增 是否使用 字数统计
     wordCount = true
     # FixIt 0.2.17 | 新增 是否使用 预计阅读
     readingTime = true
     # FixIt 0.2.17 | 新增 文章结束标志
-    endFlag = ""
+    endFlag = "本文完，博客系统由hugo搭建，配套FixIt主题。"
     # FixIt 0.2.18 | 新增 是否开启即时页面
-    instantPage = false
+    instantPage = true
     # FixIt 0.3.0 | 新增 是否在侧边栏显示集合列表
     collectionList = true
     # FixIt 0.3.0 | 新增 是否在文章末尾显示集合导航
@@ -175,7 +281,7 @@
       # 是否使用目录
       enable = true
       # 是否保持使用文章前面的静态目录
-      keepStatic = true
+      keepStatic = false
       # 是否使侧边目录自动折叠展开
       auto = true
       # FixIt 0.2.13 | 新增 目录位置 ["left", "right"]
@@ -204,15 +310,6 @@
           h4 = "{h2}.{h3}.{h4}.{title}"
           h5 = "{h2}.{h3}.{h4}.{h5}.{title}"
           h6 = "{h2}.{h3}.{h4}.{h5}.{h6}.{title}"
-    # 代码配置
-    [page.code]
-      # 是否显示代码块的复制按钮
-      copy = true
-      # FixIt 0.2.13 | 新增 是否显示代码块的编辑按钮
-      edit = true
-      # 默认展开显示的代码行数
-      maxShownLines = 15
-    # KaTeX 数学公式 (https://katex.org)
     [page.math]
       enable = true
       # 默认行内定界符是 $ ... $ 和 \( ... \)
@@ -226,6 +323,15 @@
       # KaTeX 插件 mhchem
       mhchem = true
     # Mapbox GL JS 配置 (https://docs.mapbox.com/mapbox-gl-js)
+     # 代码配置
+    [page.code]
+      # 是否显示代码块的复制按钮
+      copy = true
+      # FixIt 0.2.13 | 新增 是否显示代码块的编辑按钮
+      edit = true
+      # 默认展开显示的代码行数
+      maxShownLines = 50
+    # KaTeX 数学公式 (https://katex.org)
     [page.mapbox]
       # Mapbox GL JS 的 access token
       accessToken = ""
@@ -251,45 +357,211 @@
       enable = false
       count = 5
     # FixIt 0.2.17 | 新增 赞赏设置
+    # FixIt 0.2.17 | NEW Donate (Sponsor) settings
     [page.reward]
-      enable = false
-      animation = false
-      # 相对于页脚的位置，可选值：["before", "after"]
-      position = "after"
-      # comment = "Buy me a coffee"
-      # FixIt 0.2.18 | 新增 二维码图片展示模式，可选值：["static", "fixed"]，默认：`static`
-      mode = "static"
-    [page.reward.ways]
-        # wechatpay = "/images/wechatpay.png"
-        # alipay = "/images/alipay.png"
+        enable = true
+        animation = true
+        # position relative to post footer, optional value: ["before", "after"]
+        position = "before"
+        comment = "Thank for your reading~(just a test)"
+        # FixIt 0.2.18 | NEW display mode of QR code images, optional values: ["static", "fixed"], default: `static`
+        mode = "fixed"
+        [page.reward.ways]
+        wechatpay = "/images/wechatpay.jpg"
+        alipay = "/images/alipay.jpg"
         # paypal = "/images/paypal.png"
         # bitcoin = "/images/bitcoin.png"
-    # 文章页面的分享信息设置
+        # 文章页面的分享信息设置
     [page.share]
-      enable = true
-      Baidu = true
-      Twitter = true
-      Facebook = true
-      Weibo = true
-      Whatsapp = false
-      Pinterest = false
-      Tumblr = false
-      HackerNews = false
-      Reddit = false
-      VK = false
-      Buffer = false
-      Xing = false
-      Line = false
-      Instapaper = false
-      Pocket = false
-      Flipboard = false
-      Linkedin = false
-      Myspace = false
-      Blogger = false
-      Odnoklassniki = false
-      Evernote = false
-      Skype = false
-      Trello = false
-      Mix = false
+        enable = true
+        Twitter = false
+        Facebook = false
+        Linkedin = false
+        Weibo = true
+        Baidu = true
+        Bilibili= true
 
- 
+  # FixIt NEW | 0.2.7 Third-party library config
+  [page.library]
+    [page.library.css]
+      # someCSS = "some.css"
+      # located in "assets/"
+      # Or
+      # someCSS = "https://cdn.example.com/some.css"
+    [page.library.js]
+      # someJavascript = "some.js"
+      # Or
+      # someJavascript = "https://cdn.example.com/some.js"
+      flyfish = "/js/flyfish.js"
+  # Page SEO config
+  [page.seo]
+    # image URL
+    images = []
+    # Publisher info
+    [page.seo.publisher]
+      name = "Lruihao"
+      logoUrl = "/images/avatar.jpg"
+
+# TypeIt config
+[typeit]
+  # typing speed between each step (measured in milliseconds)
+  speed = 100
+  # blinking speed of the cursor (measured in milliseconds)
+  cursorSpeed = 1000
+  # character used for the cursor (HTML format is supported)
+  cursorChar = "|"
+  # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
+  duration = -1
+  # FixIt 0.2.18 | NEW whether your strings will continuously loop after completing
+  loop = false
+
+# FixIt 0.2.15 | NEW Mermaid config
+[mermaid]
+  # For values, see https://mermaid.js.org/config/theming.html#available-themes
+  themes = ['default', 'dark']
+
+# FixIt 0.2.12 | NEW PanguJS config
+[pangu]
+  # For Chinese writing
+  enable = true
+  selector = "article" # FixIt 0.2.17 | NEW
+
+
+[watermark] # 水印配置
+    enable = true
+    # 水印内容（允许 HTML 格式）
+    content = "皂荚"
+    # 水印透明度
+    opacity = 0.1
+    # 水印父节点
+    appendTo = ".wrapper>main"
+    # 单水印宽度 单位：px
+    width = 150
+    # 单水印高度 单位：px
+    height = 20
+    # 水印行间距 单位：px
+    rowSpacing = 60
+    # 水印列间距 单位：px
+    colSpacing = 30
+    # 水印旋转角度 单位：deg
+    rotate = 15
+    # 水印字体大小，单位：rem
+    fontSize = 0.85
+    # FixIt 0.2.13 | 新增 水印字体
+    fontFamily = "inherit"
+
+
+# FixIt 0.3.10 | NEW Busuanzi count
+[busuanzi]
+  # whether to enable busuanzi count
+  enable = false
+  # busuanzi count core script source. Default is https://vercount.one/js
+  source = "https://vercount.one/js"
+  # whether to show the site views
+  siteViews = true
+  # whether to show the page views
+  pageViews = true
+
+# Site verification code config for Google/Bing/Yandex/Pinterest/Baidu
+[verification]
+  google = ""
+  bing = ""
+  yandex = ""
+  pinterest = ""
+  baidu = ""
+
+# FixIt 0.2.10 | NEW Site SEO config
+[seo]  # 未用到
+  # image URL 
+#   image = "/images/apple-devices-preview.webp"
+  # thumbnail URL
+#   thumbnailUrl = "/images/tn.webp"
+
+# FixIt 0.2.10 | NEW Analytics config
+[analytics]
+  enable = false
+  # Google Analytics
+  [analytics.google]
+    id = ""
+    # whether to anonymize IP
+    anonymizeIP = true
+  # Fathom Analytics
+  [analytics.fathom]
+    id = ""
+    # server url for your tracker if you're self hosting
+    server = ""
+
+# Cookie consent config
+[cookieconsent]
+  enable = true
+  # text strings used for Cookie consent banner
+  [cookieconsent.content]
+    message = ""
+    dismiss = ""
+    link = ""
+
+# Compatibility config
+[compatibility]
+  # whether to use Polyfill.io to be compatible with older browsers
+  polyfill = false
+  # whether to use object-fit-images to be compatible with older browsers
+  objectFit = false
+
+# FixIt 0.2.14 | NEW GitHub banner in the top-right or top-left corner
+[githubCorner] # 在左上角或者右上角显示 GitHub 开源链接
+    enable = true
+    permalink = "https://github.com/crack-dawn/CTGU-Hugo-Blog.io"
+    title = "在 GitHub 上查看源代码"
+    position = "right" # ["left", "right"]
+    
+# FixIt 0.2.14 | NEW Gravatar config
+# [gravatar]
+#   enable = true
+#   # Gravatar host, default: "www.gravatar.com"
+#   host = "gravatar.lruihao.cn" # "cravatar.cn", "gravatar.loli.net"
+#   style = "mp" # "", mp, identicon, monsterid, wavatar, retro, blank, robohash
+
+# FixIt 0.2.16 | NEW Back to top
+[backToTop]
+  enable = true
+  # Scroll percent label in b2t button
+  scrollpercent = true
+
+# FixIt 0.2.16 | NEW Reading progress bar
+[readingProgress] # 全局页面 阅读进度条配置
+    enable = true
+    start = "left"         # 可用值：["left", "right"]
+    position = "bottom"    # 可用值：["top", "bottom"]
+    reversed = true
+    light = ""
+    dark = ""
+    height = "2px"
+
+    
+[pace] # 页面加载期间顶部的进度条 # 有关详细信息：https://github.com/CodeByZach/pace
+    enable = true
+     # 所有可用颜色：# ["black", "blue", "green", "orange", "pink", "purple", "red", "silver", "white", "yellow"]
+    color = "blue"
+    # 所有可用主题：# ["barber-shop", "big-counter", "bounce", "center-atom", "center-circle", "center-radar", "center-simple","corner-indicator", "fill-left", "flash", "flat-top", "loading-bar", "mac-osx", "material", "minimal"]
+    theme = "minimal" 
+
+# FixIt 0.3.10 | NEW Global Feed config for RSS, Atom and JSON feed.
+[feed]
+  # The number of posts to include in the feed. Default is -1, which means all posts.
+  limit = 10
+  # whether to show the full text content in feed.
+  fullText = true
+
+# Mobile Devtools confi
+[mDevtools]
+  enable = false
+  # "eruda", "vConsole" supported
+  type = "eruda"
+
+# FixIt 0.2.15 | NEW Developer options
+[dev]
+  enable = false
+  # Check for updates
+  c4u = false
+  # Please do not expose to public!
+  githubToken = ""
