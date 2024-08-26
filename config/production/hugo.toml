@@ -1,10 +1,5 @@
 # 用于 Hugo 输出文档的设置。 关乎到markdown等特殊格式显示效果
-[markup]
-  [markup.highlight]
-    codeFences = true
-    lineNos = true
-    lineNumbersInTable = true
-    noClasses = false
+
 # 
 [mediaTypes]
   # 用于输出 Markdown 格式文档的设置
@@ -49,15 +44,4 @@
     isPlainText = true
     isHTML = false
 
-# 用于 Hugo 输出文档的设置，可选值如下：
-# home: ["HTML", "RSS", "JSON", "archives", "offline", "README", "baidu_urls"]
-# page: ["HTML", "MarkDown"]
-# section: ["HTML", "RSS"]
-# taxonomy: ["HTML", "RSS"]
-# term: ["HTML", "RSS"]
-[outputs]
-  home = ["HTML", "RSS", "JSON", "archives", "offline"]
-  page = ["HTML", "MarkDown"]
-  section = ["HTML", "RSS"]
-  taxonomy = ["HTML"]
-  term = ["HTML", "RSS"]
+ 

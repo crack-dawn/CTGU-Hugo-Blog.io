@@ -1,29 +1,9 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Draft - 标签 - </title>
+    <title>Draft - 标签 | </title>
     <link>http://localhost:1313/CTGU-Hugo-Blog.io/tags/draft/</link>
     <description>Draft - 标签 | </description>
-    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 12 Aug 2024 13:00:30 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/CTGU-Hugo-Blog.io/tags/draft/" rel="self" type="application/rss+xml" /><item>
-  <title>Vscode Auto Task</title>
-  <link>http://localhost:1313/CTGU-Hugo-Blog.io/posts/2bf712f/</link>
-  <pubDate>Mon, 12 Aug 2024 13:00:30 &#43;0800</pubDate>
-  <author>crack-dawn</author>
-  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/posts/2bf712f/</guid>
-  <description><![CDATA[<h2 id="vsocde-task-documentshttpscodevisualstudiocomdocseditortasks" class="heading-element"><span><a href="https://code.visualstudio.com/Docs/editor/tasks"target="_blank" rel="external nofollow noopener noreferrer">Vsocde Task Documents</a></span>
-  <a href="#vsocde-task-documentshttpscodevisualstudiocomdocseditortasks" class="heading-mark">
-    <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
-  </a>
-</h2>]]></description>
-</item>
-<item>
-  <title>你好</title>
-  <link>http://localhost:1313/CTGU-Hugo-Blog.io/posts/2982ab1/</link>
-  <pubDate>Sun, 11 Aug 2024 23:08:01 &#43;0800</pubDate>
-  <author>crack-dawn</author>
-  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/posts/2982ab1/</guid>
-  <description><![CDATA[<p>你好 Hello</p>]]></description>
-</item>
-<item>
+    <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 11 Aug 2024 22:56:40 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/CTGU-Hugo-Blog.io/tags/draft/" rel="self" type="application/rss+xml" /><item>
   <title>Hugo仓库维护与博客更新</title>
   <link>http://localhost:1313/CTGU-Hugo-Blog.io/posts/a116deb/</link>
   <pubDate>Sun, 11 Aug 2024 22:56:40 &#43;0800</pubDate>
@@ -34,7 +14,7 @@
     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
   </a>
 </h2><ol>
-<li><a href="https://www.cnblogs.com/legenddog/p/17632687.html"target="_blank" rel="external nofollow noopener noreferrer">https://www.cnblogs.com/legenddog/p/17632687.html</a></li>
+<li><a href="https://www.cnblogs.com/legenddog/p/17632687.html"target="_blank" rel="external nofollow noopener noreferrer">https://www.cnblogs.com/legenddog/p/17632687.html<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a></li>
 <li></li>
 </ol>
 <h2 id="从github拉取hugo博客仓库本地部署" class="heading-element"><span>从github拉取hugo博客仓库，本地部署</span>
@@ -207,20 +187,22 @@
 </div>]]></description>
 </item>
 <item>
-  <title>2.hugo学习-功能拓展</title>
-  <link>http://localhost:1313/CTGU-Hugo-Blog.io/posts/hugo-learn/f30d7fd/</link>
+  <title>hugo杂记</title>
+  <link>http://localhost:1313/CTGU-Hugo-Blog.io/posts/f30d7fd/</link>
   <pubDate>Sun, 21 Jul 2024 14:35:04 &#43;0800</pubDate>
   <author>crack-dawn</author>
-  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/posts/hugo-learn/f30d7fd/</guid>
+  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/posts/f30d7fd/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
-  <title>1.github Action Introduction</title>
-  <link>http://localhost:1313/CTGU-Hugo-Blog.io/posts/github-action-learn/0779d18/</link>
-  <pubDate>Sat, 20 Jul 2024 16:09:10 &#43;0800</pubDate>
+  <title>合集配置踩坑记录</title>
+  <link>http://localhost:1313/CTGU-Hugo-Blog.io/posts/fixit%E5%90%88%E9%9B%86%E9%85%8D%E7%BD%AE/</link>
+  <pubDate>Fri, 28 Jun 2024 22:29:03 &#43;0800</pubDate>
   <author>crack-dawn</author>
-  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/posts/github-action-learn/0779d18/</guid>
-  <description><![CDATA[password:]]></description>
+  <guid>http://localhost:1313/CTGU-Hugo-Blog.io/posts/fixit%E5%90%88%E9%9B%86%E9%85%8D%E7%BD%AE/</guid>
+  <description><![CDATA[FixIt内容的目录结构 1 2 3 4 5 6 7 8 9 10 11 12 13 14 -|(内容)content -|posts -|分类(categeries) -|合集(collections) -|index.md 标注合集大类的名称 -|合集1文章存放处 -|index.md (标注合集1的名称，一般和文件夹同名) -|文章1.md -|合集2文章存放处 -|index.md (标注合集2的名称 一般和文件夹同名) -|文章6.md -|friends -|about -|reward FixIt主题，建立文档合集最好将合集文章放入 content/posts/collections/ 目录下💡；或是通过，在合集文章开头加上 collections: [&quot;集合1&quot;] 将文章归入对应合集。 文档合集Fixt主题的相关设置开启[page]的这些设置项。
+1 2 3 4 # FixIt 0.3.0 | 新增 是否在侧边栏显示集合列表 collectionList = true # FixIt 0.3.0 | 新增 是否在文章末尾显示集合导航 collectionNavigation = true 注意taxonomies.toml配置项,务必添加 collection = &quot;collections&quot;，不要少s，也不要多s,如下配置
+1 2 3 4 5 6 7 8 9 10 # ------------------------------------------------------------------------------------- # Taxonomies Configuration # `taxonomies.]]></description>
 </item>
 </channel>
 </rss>

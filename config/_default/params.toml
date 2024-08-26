@@ -363,12 +363,12 @@ disableThemeInject = false
         animation = true
         # position relative to post footer, optional value: ["before", "after"]
         position = "before"
-        comment = "Thank for your reading~(just a test)"
+        comment = "Thank for your reading~(just额，reward for FixIt auther)"
         # FixIt 0.2.18 | NEW display mode of QR code images, optional values: ["static", "fixed"], default: `static`
         mode = "fixed"
         [page.reward.ways]
-        wechatpay = "/images/wechatpay.jpg"
-        alipay = "/images/alipay.jpg"
+        wechatpay = "/reward/wechatpay-FixIt.gif"
+        alipay = "reward/alipay-FixIt.gif"
         # paypal = "/images/paypal.png"
         # bitcoin = "/images/bitcoin.png"
         # 文章页面的分享信息设置

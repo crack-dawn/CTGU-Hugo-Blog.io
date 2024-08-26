@@ -13,9 +13,11 @@ message:   # 密码输入框预设提示
 password:  # 解锁密码
 
 layout:     # 布局归类：posts, archives, tags, categories等，文件分散在不同文件夹需要注明
-archives:
+type: posts
+archives: 
 tags: ['draft']
 categories: ['draft']
+collocations: ['draft']
 
 author:
   name:
@@ -40,7 +42,8 @@ resources:
     src: featured-image-preview.jpg
 toc: true
 math: true
-lightgallery: true
+lightgallery: false
+
 
 # See details front matter: https://fixit.lruihao.cn/documentation/content-management/introduction/#front-matter
 ---

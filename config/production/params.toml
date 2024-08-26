@@ -45,6 +45,24 @@
         darkTheme = "dark"
         lazyLoad = true
 
+# FixIt 0.3.10 | NEW Busuanzi count
+[busuanzi]
+  # whether to enable busuanzi count
+  enable = true
+  # busuanzi count core script source. Default is https://vercount.one/js
+  source = "https://vercount.one/js"
+  # whether to show the site views
+  siteViews = true
+  # whether to show the page views
+  pageViews = true
+
+# CDN config for third-party library files
+[cdn]
+  # CDN data file name, disabled by default ["jsdelivr.yml", "unpkg.yml", ...]
+  # located in "themes/FixIt/assets/data/cdn/" directory
+  # you can store your own data files in the same path under your project: "assets/data/cdn/"
+  data = "unpkg.yml"
+
 # <script src="https://giscus.app/client.js"
 #         data-repo="crack-dawn/CTGU-Hugo-Blog.io"
 #         data-repo-id="R_kgDOMVEAbA"
@@ -63,30 +81,3 @@
 # </script>
 
 
-# FixIt 0.2.12 | NEW Busuanzi count
-# FixIt 0.2.12 | NEW 不蒜子统计
-# [ibruce]
-#   enable = true
-#   enablePost = true
-
-
-# # 第三方库配置
-# [params.page.library]
-#   [params.page.library.css]
-#     # someCSS = "some.css"
-#     # 位于 "assets/"
-#     # 或者
-#     # someCSS = "https://cdn.example.com/some.css"
-#   [params.page.library.js]
-#     # someJavascript = "some.js"
-#     # 位于 "assets/"
-#     # 或者
-#     # someJavascript = "https://cdn.example.com/some.js"
-# # 页面 SEO 配置
-# [params.page.seo]
-#   # 图片 URL
-#   images = []
-#   # 出版者信息
-#   [params.page.seo.publisher]
-#     name = ""
-#     logoUrl = ""

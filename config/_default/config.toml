@@ -3,7 +3,7 @@ baseURL = 'https://crack-dawn.github.io/CTGU-Hugo-Blog.io'# 网站根目录
 languageCode = 'en-us'
 
 defaultContentLanguage = "zh-cn" # 默认语言
-theme = ["FixIt"]
+theme = ["FixIt", "hugo-embed-pdf-shortcode"]
 
 
 # 是否开启短代码

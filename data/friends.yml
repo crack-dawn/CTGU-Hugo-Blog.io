@@ -1,8 +1,13 @@
 # 朋友/站点信息例子
-- nickname: Lruihao
-  avatar: https://lruihao.cn/images/avatar.jpg
-  url: https://lruihao.cn
-  description: Lruihao's Note
+- nickname: Lruihao # 昵称
+  avatar: https://lruihao.cn/images/avatar.jpg # 头像
+  url: https://lruihao.cn # 站点
+  description: Lruihao's Note ——the author of FixIt # 描述
+
+- nickname: 绅士喵
+  avatar: https://blog.hentioe.dev/img/avatar-150.webp
+  url: https://blog.hentioe.dev/
+  description: 梦想就是能做自己热爱的事情
 
 - nickname: Mostima
   avatar: "https://mostima.blog/img/avatar.jpg"
@@ -10,6 +15,22 @@
   description: 悟以往之不谏，知来者之可追
 
 - nickname: 逐水寻源
-  avatar: https://www.zair.top/img/logo.png # 您的头像
+  avatar: https://www.zair.top/img/logo.png 
   url: https://www.zair.top/
   description: 分享我的学习笔记、经验与有趣的小玩意.
+
+- nickname: 勾陈
+  avatar: https://www.gravatar.com/avatar/14f07290ccf010e5415119806269cf18?s=240&d=mp
+  url: https://www.gouchen.xyz/
+  description: 这是我的个人网站博客.
+
+- nickname: Zoe
+  avatar: https://blog.tantalum.life/logo.png
+  url: https://blog.tantalum.life/
+  description: 新世紀摸魚戰士
+
+- nikname: 张理坤
+  avatar: https://static.zahui.fan/public/dog.svg
+  url: https://zahui.fan/
+  description: 此博客为我记录运维工作总结所用
+

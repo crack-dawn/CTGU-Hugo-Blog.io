@@ -1,6 +1,6 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Stable-Diffusion-Webui - 标签 - </title>
+    <title>Stable-Diffusion-Webui - 标签 | </title>
     <link>http://localhost:1313/CTGU-Hugo-Blog.io/tags/stable-diffusion-webui/</link>
     <description>Stable-Diffusion-Webui - 标签 | </description>
     <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 12 Aug 2024 23:25:20 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/CTGU-Hugo-Blog.io/tags/stable-diffusion-webui/" rel="self" type="application/rss+xml" /><item>
@@ -22,7 +22,7 @@
 <p>优点：安装简单，无需网络，直接下载安装，安装过程简单
 缺点：版本可能滞后一些，但更加稳定可靠
 Installation on <code>Windows 10/11</code> with <code>NVidia-GPUs</code> using release package
-<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/releases/tag/v1.0.0-pre"target="_blank" rel="external nofollow noopener noreferrer">Download sd.webui.zip from v1.0.0-pre and extract its contents:https://github.com/AUTOMATIC1111/stable-diffusion-webui/releases/tag/v1.0.0-pre</a></p>
+<a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui/releases/tag/v1.0.0-pre"target="_blank" rel="external nofollow noopener noreferrer">Download sd.webui.zip from v1.0.0-pre and extract its contents:https://github.com/AUTOMATIC1111/stable-diffusion-webui/releases/tag/v1.0.0-pre<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a></p>
 </blockquote>
 <ul>
 <li>Unzip <code>sd.webui.zip</code> to a folder of your choice.</li>
@@ -39,8 +39,8 @@ Installation on <code>Windows 10/11</code> with <code>NVidia-GPUs</code> using r
 优点：可以获取最新的 <code>stable-diffusion-webui</code> 版本</p>
 </blockquote>
 <ul>
-<li>Install <a href="https://www.python.org/downloads/release/python-3106/"target="_blank" rel="external nofollow noopener noreferrer">Python 3.10.6</a> (Newer version of Python does not support torch), checking &ldquo;Add Python to PATH&rdquo;.</li>
-<li>Install <a href="https://git-scm.com/downloads"target="_blank" rel="external nofollow noopener noreferrer">Git</a>.</li>
+<li>Install <a href="https://www.python.org/downloads/release/python-3106/"target="_blank" rel="external nofollow noopener noreferrer">Python 3.10.6<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a> (Newer version of Python does not support torch), checking &ldquo;Add Python to PATH&rdquo;.</li>
+<li>Install <a href="https://git-scm.com/downloads"target="_blank" rel="external nofollow noopener noreferrer">Git<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a>.</li>
 <li>Download the stable-diffusion-webui repository, for example by running</li>
 </ul>
 <div class="highlight"><div class="chroma">
@@ -55,13 +55,13 @@ Installation on <code>Windows 10/11</code> with <code>NVidia-GPUs</code> using r
 完成初始化安装操作</li>
 </ul>
 <hr>
-<h2 id="如何使用httpswwwcnblogscomdealip17275651htmldocker-build-e4bba3e79086" class="heading-element"><span><a href="https://www.cnblogs.com/deali/p/17275651.html#docker-build-%E4%BB%A3%E7%90%86"target="_blank" rel="external nofollow noopener noreferrer">如何使用</a></span>
+<h2 id="如何使用httpswwwcnblogscomdealip17275651htmldocker-build-e4bba3e79086" class="heading-element"><span><a href="https://www.cnblogs.com/deali/p/17275651.html#docker-build-%E4%BB%A3%E7%90%86"target="_blank" rel="external nofollow noopener noreferrer">如何使用<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a></span>
   <a href="#%e5%a6%82%e4%bd%95%e4%bd%bf%e7%94%a8httpswwwcnblogscomdealip17275651htmldocker-build-e4bba3e79086" class="heading-mark">
     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
   </a>
 </h2><blockquote>
 <p>刚开始肯定一脸懵逼，咋画不出高大上的效果啊？
-提示：可以用<a href="https://www.bilibili.com/video/BV1Qz421Q7yn/?share_source=copy_web&amp;vd_source=2ef13f5d59f10f604d872c33f966a20b"target="_blank" rel="external nofollow noopener noreferrer"><code>colab</code></a>练手，使用python编程进行AI绘画。</p>
+提示：可以用<a href="https://www.bilibili.com/video/BV1Qz421Q7yn/?share_source=copy_web&amp;vd_source=2ef13f5d59f10f604d872c33f966a20b"target="_blank" rel="external nofollow noopener noreferrer"><code>colab</code><i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a>练手，使用python编程进行AI绘画。</p>
 </blockquote>
 <ol>
 <li>prompt提示词</li>
@@ -69,13 +69,13 @@ Installation on <code>Windows 10/11</code> with <code>NVidia-GPUs</code> using r
 <p>首先，得学会使用 prompt，也就是生成图片的描述，Stable Diffusion 通过英文文字内容来描述场景或物体，以此来决定生成的图像中会出现什么。文字描述是决定图像生成质量的关键因素。具体如何写 prompt 不在本文讨论范围，请自行搜索相关文章，网上很多。</p>
 <p>这几个网站可以按提示组合生成 prompt：</p>
 <blockquote>
-<p><a href="https://promptomania.com/stable-diffusion-prompt-builder/"target="_blank" rel="external nofollow noopener noreferrer">https://promptomania.com/stable-diffusion-prompt-builder/</a>
-<a href="https://weirdwonderfulai.art/resources/disco-diffusion-modifiers/"target="_blank" rel="external nofollow noopener noreferrer">https://weirdwonderfulai.art/resources/disco-diffusion-modifiers/</a></p>
+<p><a href="https://promptomania.com/stable-diffusion-prompt-builder/"target="_blank" rel="external nofollow noopener noreferrer">https://promptomania.com/stable-diffusion-prompt-builder/<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a>
+<a href="https://weirdwonderfulai.art/resources/disco-diffusion-modifiers/"target="_blank" rel="external nofollow noopener noreferrer">https://weirdwonderfulai.art/resources/disco-diffusion-modifiers/<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a></p>
 </blockquote>
 <p>这几个网站有很多人分享的成品图和描述文案：</p>
 <blockquote>
-<p><a href="https://prompthero.com/"target="_blank" rel="external nofollow noopener noreferrer">https://prompthero.com/</a>
-<a href="https://openart.ai/"target="_blank" rel="external nofollow noopener noreferrer">https://openart.ai/</a></p>
+<p><a href="https://prompthero.com/"target="_blank" rel="external nofollow noopener noreferrer">https://prompthero.com/<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a>
+<a href="https://openart.ai/"target="_blank" rel="external nofollow noopener noreferrer">https://openart.ai/<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a></p>
 </blockquote>
 <ol start="2">
 <li>模型</li>
@@ -83,9 +83,9 @@ Installation on <code>Windows 10/11</code> with <code>NVidia-GPUs</code> using r
 <p>模型是个统称，其中包含了Checkpoints、LORA、Texture之类的，不细说了，按照模型网站上的教程安装使用就行。
 然后模型的话，可以去这几个网站下载：</p>
 <ul>
-<li>liblib绘画：<a href="https://www.liblib.art/"target="_blank" rel="external nofollow noopener noreferrer">liblib绘画</a> 即 <a href="https://www.liblib.art/"target="_blank" rel="external nofollow noopener noreferrer">https://www.liblib.art/</a></li>
-<li>huggingface抱脸:<a href="https://huggingface.co/models?sort=trending&amp;search=stable-diffusion"target="_blank" rel="external nofollow noopener noreferrer">huggingface</a>，即 <a href="https://civitai.com/"target="_blank" rel="external nofollow noopener noreferrer">https://civitai.com/</a></li>
-<li>civitai:<a href="https://civitai.com/search/models?sortBy=models_v9&amp;query=nahida"target="_blank" rel="external nofollow noopener noreferrer">civitai</a> 即 <a href="https://civitai.com/"target="_blank" rel="external nofollow noopener noreferrer">https://civitai.com/</a></li>
+<li>liblib绘画：<a href="https://www.liblib.art/"target="_blank" rel="external nofollow noopener noreferrer">liblib绘画<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a> 即 <a href="https://www.liblib.art/"target="_blank" rel="external nofollow noopener noreferrer">https://www.liblib.art/<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a></li>
+<li>huggingface抱脸:<a href="https://huggingface.co/models?sort=trending&amp;search=stable-diffusion"target="_blank" rel="external nofollow noopener noreferrer">huggingface<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a>，即 <a href="https://civitai.com/"target="_blank" rel="external nofollow noopener noreferrer">https://civitai.com/<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a></li>
+<li>civitai:<a href="https://civitai.com/search/models?sortBy=models_v9&amp;query=nahida"target="_blank" rel="external nofollow noopener noreferrer">civitai<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a> 即 <a href="https://civitai.com/"target="_blank" rel="external nofollow noopener noreferrer">https://civitai.com/<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a></li>
 </ul>
 <hr>
 <!-- raw HTML omitted -->
